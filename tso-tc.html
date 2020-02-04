@@ -231,24 +231,56 @@ Fax: 250-363-8188</p>
 
 </section>
 
-<!-- GeomapStart -->
-<div id="location_map"
-	class="wb-geomap"
-	data-wb-geomap='{
-		"layersFile": "https://fomag.github.io/temp/configwms-en.min.js"
-	}'>
+
+<div id="mygeomap" class="wb-geomap position" data-wb-geomap='{ "tables": [ { "id": "cities" } ] }'>
 	<div class="row">
-		<div class="col-md-6">
-			<!-- Insert Map Start (mandatory) -->
+		<div class="col-md-9">
 			<div class="wb-geomap-map"></div>
-			<!-- Insert Map End -->
 		</div>
-		<!-- Insert Layer Data Start (mandatory) -->
-		<div class="wb-geomap-layers col-md-4"></div>
-		<!-- Insert Layer Data End -->
+		<!-- Add optional map legend -->
+		<div class="wb-geomap-legend col-md-3">
+			<h2>Legend</h2>
+			<-- Geomap will insert legend here -->
+		</div>
+		<div class="row">
+			<!-- Add placeholder for overlays -->
+			<div class="wb-geomap-layers col-md-12">
+				
+
+
+
+			</div>
+		</div>
 	</div>
 </div>
-<!-- GeomapEnd -->
+
+<table id="cities" aria-label="Cities">
+	<caption>Major cities in Canada.</caption>
+	<thead>
+		<tr>
+			<th>Rank</th>
+			<th>Census subdivision</th>
+			<th>Population 2011</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr data-geometry="POINT (-123.358011 48.4266505)" data-type="wkt">
+			<td>1</td>
+			<td class="select">
+				<a href="#" title="">Point 1</a>
+			</td>
+			<td>2615060</td>
+		</tr>
+		<tr data-geometry="POINT (-123.0958343 49.2714824)" data-type="wkt">
+			<td>2</td>
+			<td class="select">
+				<a href="#" title="">Point 2</a>
+			</td>
+			<td>1649519</td>
+		</tr>
+		...
+	</tbody>
+</table>
 
 <div class="pagedetails">
 <div class="row">
