@@ -232,7 +232,12 @@ Fax: 250-363-8188</p>
 </section>
 
 
-<div id="mygeomap" class="wb-geomap position" data-wb-geomap='{ "tables": [ { "id": "cities" } ] }'>
+<div id="mygeomap" class="wb-geomap" data-wb-geomap='{ "tables": [ { 
+"id": "cities", 
+"tooltips": true, 
+"popups": true,
+"visible": true 
+} ] }'>
 	<div class="row">
 		<div class="col-md-9">
 			<div class="wb-geomap-map"></div>
@@ -240,47 +245,54 @@ Fax: 250-363-8188</p>
 		<!-- Add optional map legend -->
 		<div class="wb-geomap-legend col-md-3">
 			<h2>Legend</h2>
-			<-- Geomap will insert legend here -->
 		</div>
 		<div class="row">
 			<!-- Add placeholder for overlays -->
 			<div class="wb-geomap-layers col-md-12">
-				
-
-
 
 			</div>
 		</div>
 	</div>
 </div>
 
-<table id="cities" aria-label="Cities">
-	<caption>Major cities in Canada.</caption>
+<div class="clearfix"></div>
+<div class="clearfix"></div>
+
+<br>
+
+<details>
+<summary>TSO's</summary>	
+<table id="cities" aria-label="Cities" class="table">
 	<thead>
 		<tr>
-			<th>Rank</th>
-			<th>Census subdivision</th>
-			<th>Population 2011</th>
+			<th>City</th>
+			<th>Address</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr data-geometry="POINT (-123.358011 48.4266505)" data-type="wkt">
-			<td>1</td>
-			<td class="select">
-				<a href="#" title="">Point 1</a>
-			</td>
-			<td>2615060</td>
+			<td>Kelowna</td>
+			<td>200 - 471 Queensway Avenue<br>Kelowna BC V1Y 6S5</td>
 		</tr>
 		<tr data-geometry="POINT (-123.0958343 49.2714824)" data-type="wkt">
-			<td>2</td>
-			<td class="select">
-				<a href="#" title="">Point 2</a>
-			</td>
-			<td>1649519</td>
+			<td>Prince George</td>
+			<td>280 Victoria Street<br>Prince George BC  V2L 4X3<br>Fax: 250-561-7869</td>
 		</tr>
-		...
+		<tr data-geometry="POINT (-122.846197 49.179788)" data-type="wkt">
+			<td>Penticton</td>
+			<td>277 Winnipeg Street<br>Penticton BC  V2A 1N6<br>Fax: 250-492-8346</td>
+		</tr>
+		<tr data-geometry="POINT (-122.748619 53.918259)" data-type="wkt">
+			<td>Surrey</td>
+			<td>9737 King George Boulevard<br>Surrey BC  V3T 5W6<br>Fax: 604-587-2010</td>
+		</tr>
+		<tr data-geometry="POINT (-119.595866 49.498695)" data-type="wkt">
+			<td>Vancouver</td>
+			<td>468 Terminal Ave<br>Vancouver BC  V6A 0C1<br>Fax: 604-689-7536</td>
+		</tr>			
 	</tbody>
 </table>
+</details>
 
 <div class="pagedetails">
 <div class="row">
