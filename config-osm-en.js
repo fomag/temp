@@ -9,7 +9,7 @@
  		type: "osm",
  		mapOptions: {
  			center: [-52.7222765,47.5410882],
- 			zoomLevel :11
+ 			zoomLevel: 11
  		}
  	}
  };
