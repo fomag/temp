@@ -5,11 +5,11 @@
  *
  */var wet_boew_geomap = {
  	basemap: {
- 		title:"OSM Map",
- 		type:"osm",
+ 		title: "OSM Map",
+ 		type: "osm",
  		mapOptions: {
- 			center:[-52.7222765,47.5410882],
- 			zoomLevel:11
+ 			center: [-52.7222765,47.5410882],
+ 			zoomLevel :11
  		}
  	}
  };
