@@ -170,7 +170,7 @@
 				</ul>
 			</div>	
 		</li>
-		<li data-wb-fieldflow='{"action": "removeClass", "source": "#dropbox", "class": "mfp-hide", "live": true}'>I want to find an office location (courier address or drop box site)</li>
+		<li data-wb-fieldflow='{"action": "ajax", "url": "https://fomag.github.io/temp/tso+tc.html#osm_map", "live": true}'>I want to find an office location (courier address or drop box site)</li>
 	</ul>
 
 </div>
@@ -233,10 +233,11 @@ Fax: 250-363-8188</p>
 
 <style>
 .wb-geomap-map {
-	height: 500px !important
+	height: 500px !important;
 	}		
 </style>
-	
+
+<div class="mfp-hide">
 <div id="osm_map" class="wb-geomap" data-wb-geomap='{ 
 	"layersFile": "https://fomag.github.io/temp/config-osm-en.min.js",
 	"tables": [ { 
@@ -267,6 +268,8 @@ Fax: 250-363-8188</p>
 			</div>
 		</div>
 	</div>
+</div>
+
 </div>
 
 <div class="clearfix"></div>
