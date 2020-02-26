@@ -1,0 +1,84 @@
+<section class="osm_map">
+
+<style>
+.wb-geomap-map {
+	height: 500px !important;
+	}		
+</style>
+
+<div id="osm_map" class="wb-geomap" data-wb-geomap='{ 
+	"layersFile": "https://fomag.github.io/temp/config-osm-en.min.js",
+	"tables": [ { 
+		"id": "cities", 
+		"tooltips": true, 
+		"popups": true,
+		"popupsInfo": {
+			"id": "citiesPopup",
+			"height": 200,
+			"width": 450,
+			"close": true,
+			"content": "<h4>_City</h4><p>_Address</p>"},
+		"visible": true 
+	} ]					    
+ }'>
+	<div class="row">
+		<div class="col-md-11">
+			<div class="wb-geomap-map"></div>
+		</div>
+		<!-- Add optional map legend
+		<div class="wb-geomap-legend col-md-3">
+			<h2>Legend</h2>
+		</div>-->
+		<div class="row">
+			<!-- Add placeholder for overlays -->
+			<div class="wb-geomap-layers col-md-12">
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="clearfix"></div>
+<div class="clearfix"></div>
+
+<br>
+
+<details>
+<summary>Office locations listed geographically from west to east</summary>	
+<table id="cities" aria-label="Office location" class="table">
+	<thead>
+		<tr>
+			<th>City</th>
+			<th>Address</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr data-geometry="POINT (-123.358011 48.4266505)" data-type="wkt">
+			<td>Victoria</td>
+			<td>1415 Vancouver Street<br>Victoria BC V8V 3W4<br>Fax: 250-363-8188</td>
+		</tr>
+		<tr data-geometry="POINT (-123.0958343 49.2714824)" data-type="wkt">
+			<td>Vancouver</td>
+			<td>468 Terminal Ave<br>Vancouver BC  V6A 0C1<br>Fax: 604-689-7536</td>
+		</tr>	
+		<tr data-geometry="POINT (-122.846197 49.179788)" data-type="wkt">
+			<td>Surrey</td>
+			<td>9737 King George Boulevard<br>Surrey BC  V3T 5W6<br>Fax: 604-587-2010</td>
+		</tr>				
+		<tr data-geometry="POINT (-122.748619 53.918259)" data-type="wkt">
+			<td>Prince George</td>
+			<td>280 Victoria Street<br>Prince George BC  V2L 4X3<br>Fax: 250-561-7869</td>
+		</tr>
+		<tr data-geometry="POINT (-119.595866 49.498695)" data-type="wkt">
+			<td>Penticton</td>
+			<td>277 Winnipeg Street<br>Penticton BC  V2A 1N6<br>Fax: 250-492-8346</td>
+		</tr>
+		<tr data-geometry="POINT (-119.595205,49.8996077)" data-type="wkt">
+			<td>Kelowna</td>
+			<td>200 - 471 Queensway Avenue<br>Kelowna BC V1Y 6S5</td>
+		</tr>	
+	</tbody>
+</table>
+</details>
+	
+</section>
