@@ -481,7 +481,8 @@
 <script src="/etc/designs/canada/wet-boew/js/theme.min.js"></script>
 
 <script>
-$('#test3').click(trigger('wb-init.wb-geomap'));
+$( document ).on( "wb-ready.wb-geomap", ".wb-geomap", function( event, map ) {
+});
 </script>
 
 </body>
