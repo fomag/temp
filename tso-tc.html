@@ -170,7 +170,7 @@
 				</ul>
 			</div>	
 		</li>
-		<li data-wb-fieldflow='{"action": "removeClass", "source": "osm-map", "class": "mfp-hide", "live": true}'>An office location (courier address or drop box site)</li>
+		<li onclick='$( ".wb-geomap" ).trigger( "wb-init.wb-geomap" )' data-wb-fieldflow='{"action": "removeClass", "source": "#osm-map", "class": "mfp-hide", "live": true}'>An office location (courier address or drop box site)</li>
 	</ul>
 
 </div>
@@ -237,7 +237,7 @@ Fax: 250-363-8188</p>
 	}		
 </style>
 
-<section class="osm-map mfp-hide">
+<section id="osm-map" class="mfp-hide">
 
 <div id="osm_map" class="wb-geomap" data-wb-geomap='{ 
 	"layersFile": "https://fomag.github.io/temp/config-osm-en.min.js",
