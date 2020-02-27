@@ -187,50 +187,6 @@
 
 <div class="clearfix"></div>
 
-<!--section id="dropbox" class="results mfp-hide">
-<hr>
-
-<p>The CRA has offices with drop boxes in the following locations...............</p>
-
-<p>Locations listed geographically from west to east:</p>
-
-<details>
-<summary>Victoria, BC</summary>
-<p>1415 Vancouver Street<br>
-Victoria BC  V8V 3W4<br>
-Fax: 250-363-8188</p>
-</details>	
-
-<details>
-<summary>Vancouver, BC</summary>
-<p>468 Terminal Ave<br>
-Vancouver BC  V6A 0C1<br>
-Fax: 604-689-7536</p>
-</details>	
-
-<details>
-<summary>Surrey, BC</summary>
-<p>1415 Vancouver Street<br>
-Victoria BC  V8V 3W4<br>
-Fax: 250-363-8188</p>
-</details>	
-
-<details>
-<summary>Prince George, BC</summary>
-<p>1415 Vancouver Street<br>
-Victoria BC  V8V 3W4<br>
-Fax: 250-363-8188</p>
-</details>	
-
-<details>
-<summary>Penticton, BC</summary>
-<p>1415 Vancouver Street<br>
-Victoria BC  V8V 3W4<br>
-Fax: 250-363-8188</p>
-</details>	
-
-</section-->
-
 <style>
 .wb-geomap-map {
 	height: 500px !important;
@@ -238,8 +194,10 @@ Fax: 250-363-8188</p>
 </style>
 
 <section id="osm-map" class="mfp-hide">
-	
 
+<script>
+$('.wb-geomap').trigger('wb-init.wb-geomap');
+</script>
 
 <div id="osm_map" class="wb-geomap" data-wb-geomap='{ 
 	"layersFile": "https://fomag.github.io/temp/config-osm-en.min.js",
@@ -272,10 +230,6 @@ Fax: 250-363-8188</p>
 		</div>
 	</div>
 </div>
-
-<script>
-$( ".wb-geomap" ).trigger( "wb-init.wb-geomap" );	
-</script>
 
 <div class="clearfix"></div>
 <div class="clearfix"></div>
@@ -512,8 +466,6 @@ $( ".wb-geomap" ).trigger( "wb-init.wb-geomap" );
     </footer>
 </div>
 
-<script type="text/javascript">_satellite.pageBottom();</script>
-    
 <script type="text/javascript" src="/etc/clientlibs/granite/jquery.min.js"></script>
 <script type="text/javascript" src="/etc/clientlibs/granite/utils.min.js"></script>
 <script type="text/javascript" src="/etc/designs/canada/clientlib-publish.min.js"></script>
