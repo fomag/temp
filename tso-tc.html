@@ -140,7 +140,7 @@
 <p><span class="h3">What type of address are you looking for?</span></p>
 	<ul>
 		<li>A mailing address
-			<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"select", "reset": { "action": "addClass", "source":".results", "class": "mfp-hide"}, "noreqlabel": true}'>
+			<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"select", "reset": { "action": "addClass", "source":".results,osm-map", "class": "mfp-hide"}, "noreqlabel": true}'>
 			<p><span class="h3">Which province or territory do you live in?</span></p>
 				<ul>
 					<li>Alberta
@@ -273,7 +273,9 @@ Fax: 250-363-8188</p>
 	</div>
 </div>
 
-
+<script>
+$( ".wb-geomap" ).trigger( "wb-init.wb-geomap" );	
+</script>
 
 <div class="clearfix"></div>
 <div class="clearfix"></div>
@@ -528,9 +530,7 @@ Fax: 250-363-8188</p>
 <script src="https://wet-boew.github.io/v4.0-ci/demos/geomap/demo/client_functions.min.js"></script>
 <script src="/etc/designs/canada/wet-boew/js/theme.min.js"></script>
 
-<script>
-$( ".wb-geomap" ).trigger( "wb-init.wb-geomap" );	
-</script>	
+	
 
     </body>
 </html>
