@@ -170,7 +170,7 @@
 				</ul>
 			</div>	
 		</li>
-		<li  data-wb-fieldflow='{"action": "removeClass", "source": "#osm-map", "class": "mfp-hide", "live": true}'>An office location (courier address or drop box site)</li>
+		<li id="test3" data-wb-fieldflow='{"action": "removeClass", "source": "#osm-map", "class": "mfp-hide", "live": true}'>An office location (courier address or drop box site)</li>
 	</ul>
 
 </div>
@@ -195,9 +195,7 @@
 
 <section id="osm-map" class="mfp-hide">
 
-<script>
-$('.wb-geomap').trigger('wb-init.wb-geomap');
-</script>
+
 
 <div id="osm_map" class="wb-geomap" data-wb-geomap='{ 
 	"layersFile": "https://fomag.github.io/temp/config-osm-en.min.js",
@@ -481,6 +479,12 @@ $('.wb-geomap').trigger('wb-init.wb-geomap');
 
 <script src="https://wet-boew.github.io/v4.0-ci/demos/geomap/demo/client_functions.min.js"></script>
 <script src="/etc/designs/canada/wet-boew/js/theme.min.js"></script>
+
+<script>
+$('#test3').click(function(){
+trigger('wb-init.wb-geomap');
+});
+</script>
 
 </body>
 </html>
