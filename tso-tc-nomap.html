@@ -146,14 +146,11 @@
 					<li>Alberta
 						<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "mfp-hide"}, "noreqlabel": true, "noForm": true}'>
 						<p><span class="h3">Select a city.</span></p>
-							<ul>
-								<li data-wb-fieldflow='[
-								{"action": "removeClass", "source": "#tso-bttn", "class": "mfp-hide", "live":true},
-								{"action": "redir", "url": "https://www.canada.ca/en/revenue-agency/corporate/contact-information/southern-alberta-tax-services-office.html"}
-								]'>Calgary</a></li>
-								<li data-wb-fieldflow='[{"action": "removeClass", "source": "#tso-bttn", "class": "mfp-hide", "live":true},{"action": "redir", "url": "https://www.canada.ca/en/revenue-agency/corporate/contact-information/edmonton-tax-services-office.html"}]'>Edmonton</li>
-								<li data-wb-fieldflow='[{"action": "removeClass", "source": "#tso-bttn", "class": "mfp-hide", "live":true},{"action": "redir", "url": "https://www.canada.ca/en/revenue-agency/corporate/contact-information/southern-alberta-tax-services-office-1.html"}]'>Lethbridge</li>
-								<li data-wb-fieldflow='[{"action": "removeClass", "source": "#tso-bttn", "class": "mfp-hide", "live":true},{"action": "redir", "url": "https://www.canada.ca/en/revenue-agency/corporate/contact-information/southern-alberta-tax-services-office-2.html"}]'>Red Deer</li>
+							<ul>		
+      							<li data-wb-fieldflow='{"action": "append", "source": "#scenario-a", "renderas":"radio", "noreqlabel": true}'>Calgary</a></li>
+								<li>Edmonton</li>
+								<li>Lethbridge</li>
+								<li>Red Deer</li>
 							</ul>
 						</div>		
 					</li>			
@@ -162,7 +159,16 @@
 					<li>New Brunswich</li>
 					<li>Newfoundland</li>
 					<li>Nova Scotia</li>
-					<li>Ontario</li>
+					<li>Ontario
+						<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "mfp-hide"}, "noreqlabel": true, "noForm": true}'>
+						<p><span class="h3">Select a city.</span></p>
+							<ul>		
+      							<li data-wb-fieldflow='{"action": "append", "source": "#scenario-b", "renderas":"radio", "noreqlabel": true}'>Ottawa</a></li>
+								<li>Toronto</li>
+								<li>Windsor</li>
+							</ul>
+						</div>		
+					</li>
 					<li>Prince Edward Island</li>
 					<li>Quebec</li>
 					<li>Saskatchewan</li>
@@ -187,93 +193,91 @@
 
 <div class="clearfix"></div>
 
-<style>
-.wb-geomap-map {
-	height: 500px !important;
-	}		
-</style>
+<!------------------------------------------>
+<!-- Different scenarios that get re-used -->
+<!------------------------------------------>
 
-<section id="osm-map" class="mfp-hide">
+<!------------------------------------------>
+<!-- Start scenario-a ---------------------->
+<!------------------------------------------>
 
-<p>Offices are located across Canada. Most are equipped with external drop boxes that can be used for your tax returns and other correspondence. There is no walk-in counter service offered at these locations.</p>
+<div class="wb-frmvld hidden">
 
-<p>Drop boxes are typically emptied of their contents twice daily (more frequently during the tax filing season). Items are stamped by our mail operations the same day they are received. For the first clearance each morning, items are date stamped with the previous business day's date.</p>
+<form method="get">
 
-<div id="osm_map" class="wb-geomap" data-wb-geomap='{ 
-	"layersFile": "https://fomag.github.io/temp/config-osm-en.min.js",
-	"tables": [ { 
-		"id": "cities", 
-		"tooltips": true, 
-		"popups": true,
-		"popupsInfo": {
-			"id": "citiesPopup",
-			"height": 200,
-			"width": 450,
-			"close": true,
-			"content": "<h4>_City</h4><p>_Address</p>"},
-		"visible": true 
-	} ]					    
- }'>
-	<div class="row">
-		<div class="col-md-11">
-			<div class="wb-geomap-map"></div>
-		</div>
-		<!-- Add optional map legend
-		<div class="wb-geomap-legend col-md-3">
-			<h2>Legend</h2>
-		</div>-->
-		<div class="row">
-			<!-- Add placeholder for overlays -->
-			<div class="wb-geomap-layers col-md-12">
+<div id="scenario-a" class="wb-fieldflow" data-wb-fieldflow='{"reset": { "action": "addClass", "source":".results", "class": "mfp-hide"}, "live":true, "noForm": true}'>
 
-			</div>
-		</div>
-	</div>
+<p><span class="h3">What type of documents or correspondence do you want to send?</span></p>
+	<ul>
+		<li data-wb-fieldflow='{"action": "removeClass", "source": "#winnipeg", "class": "mfp-hide", "live":true}'>Personal income tax (T1)</li> <!-- Winnepeg -->
+		<li data-wb-fieldflow='{"action": "removeClass", "source": "#winnipeg", "class": "mfp-hide", "live":true}'>Corporation income tax (T2)</li> <!-- Winnepeg -->
+		<li data-wb-fieldflow='{"action": "removeClass", "source": "#princeedwardisland", "class": "mfp-hide", "live":true}'>Business taxes</li> <!-- Prince Edward Island -->
+		<li data-wb-fieldflow='{"action": "removeClass", "source": "#winnipeg", "class": "mfp-hide", "live":true}'>Benefits</li> <!-- Winnepeg -->
+		<li data-wb-fieldflow='{"action": "removeClass", "source": "#winnipegothercorrespondence", "class": "mfp-hide", "live":true}'>Other</li> <!-- Winnipeg (other correspondence) -->
+	</ul>	
 </div>
 
-<div class="clearfix"></div>
-<div class="clearfix"></div>
+</form>
 
-<br>
+</div>
 
-<details>
-<summary>Office locations listed geographically from west to east</summary>	
-<table id="cities" aria-label="Office location" class="table">
-	<thead>
-		<tr>
-			<th>City</th>
-			<th>Address</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr data-geometry="POINT (-123.358011 48.4266505)" data-type="wkt">
-			<td>Victoria</td>
-			<td>1415 Vancouver Street<br>Victoria BC V8V 3W4<br>Fax: 250-363-8188</td>
-		</tr>
-		<tr data-geometry="POINT (-123.0958343 49.2714824)" data-type="wkt">
-			<td>Vancouver</td>
-			<td>468 Terminal Ave<br>Vancouver BC  V6A 0C1<br>Fax: 604-689-7536</td>
-		</tr>	
-		<tr data-geometry="POINT (-122.846197 49.179788)" data-type="wkt">
-			<td>Surrey</td>
-			<td>9737 King George Boulevard<br>Surrey BC  V3T 5W6<br>Fax: 604-587-2010</td>
-		</tr>				
-		<tr data-geometry="POINT (-122.748619 53.918259)" data-type="wkt">
-			<td>Prince George</td>
-			<td>280 Victoria Street<br>Prince George BC  V2L 4X3<br>Fax: 250-561-7869</td>
-		</tr>
-		<tr data-geometry="POINT (-119.595866 49.498695)" data-type="wkt">
-			<td>Penticton</td>
-			<td>277 Winnipeg Street<br>Penticton BC  V2A 1N6<br>Fax: 250-492-8346</td>
-		</tr>
-		<tr data-geometry="POINT (-119.5647234 49.8871759)" data-type="wkt">
-			<td>Kelowna</td>
-			<td>200 - 471 Queensway Avenue<br>Kelowna BC V1Y 6S5</td>
-		</tr>	
-	</tbody>
-</table>
-</details>
-	
+<!------------------------------------------>
+<!-- End scenario-a ------------------------>
+<!------------------------------------------>
+
+<!------------------------------------------>
+<!-- Start scenario-b ---------------------->
+<!------------------------------------------>
+
+<div class="wb-frmvld hidden">
+
+<form method="get">
+
+<div id="scenario-b" class="wb-fieldflow" data-wb-fieldflow='{"reset": { "action": "addClass", "source":".results", "class": "mfp-hide"}, "live":true, "noForm": true}'>
+
+<p><span class="h3">What type of documents or correspondence do you want to send?</span></p>
+	<ul>
+		<li data-wb-fieldflow='{"action": "removeClass", "source": "#q4-a", "class": "mfp-hide", "live":true}'>I want to file a request to cancel administrative charges on a dishonored payment</li>
+	</ul>	
+</div>
+
+</form>
+
+</div>
+
+<!------------------------------------------>
+<!-- End scenario-b ------------------------>
+<!------------------------------------------>
+
+<!-------------------------------------------------------------------------------------------->
+<!-- The results ----------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------->
+
+<section id="winnipeg" class="results well mfp-hide">
+<h3>Winnipeg</h3>	
+<p>Send your documents or correspondence to:</p>
+<p>Winnipeg tax centre<br>
+Post Office Box 14001, Station Main<br>
+Winnipeg MB  R3C 3M3</p>
+<p>Fax: 204-984-5164</p>
+</section>
+
+<section id="princeedwardisland" class="results well mfp-hide">
+<h3>Prince Edward Island</h3>	
+<p>Send your documents or correspondence to:</p>
+<p>Winnipeg tax centre<br>
+Post Office Box 14001, Station Main<br>
+Winnipeg MB  R3C 3M3</p>
+<p>Fax: 204-984-5164</p>
+</section>
+
+<section id="winnipegothercorrespondence" class="results well mfp-hide">
+<h3>Winnipeg (other correspondence)</h3>	
+<p>Send your documents or correspondence to:</p>
+<p>Winnipeg tax centre<br>
+Post Office Box 14001, Station Main<br>
+Winnipeg MB  R3C 3M3</p>
+<p>Fax: 204-984-5164</p>
 </section>
 
 <div class="pagedetails">
