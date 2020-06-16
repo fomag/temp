@@ -221,6 +221,8 @@
 
 </div>
 
+<div class="clearfix"></div>
+
 <!------------------------------------------>
 <!-- End scenario-a ------------------------>
 <!------------------------------------------>
@@ -237,17 +239,19 @@
 
 <p><span class="h3">What type of documents or correspondence do you want to send?</span></p>
 	<ul>
-		<li data-wb-fieldflow='{"action": "removeClass", "source": "#sudbury", "class": "mfp-hide", "live":true}'>Personal income tax (T1)</li> <!-- Winnepeg -->
-		<li data-wb-fieldflow='{"action": "removeClass", "source": "#princeedwardisland", "class": "mfp-hide", "live":true}'>Corporation income tax (T2)</li> <!-- Winnepeg -->
+		<li data-wb-fieldflow='{"action": "removeClass", "source": "#sudbury", "class": "mfp-hide", "live":true}'>Personal income tax (T1)</li> <!--Sudbury -->
+		<li data-wb-fieldflow='{"action": "removeClass", "source": "#princeedwardisland", "class": "mfp-hide", "live":true}'>Corporation income tax (T2)</li> <!-- Prince Edward Island -->
 		<li data-wb-fieldflow='{"action": "removeClass", "source": "#princeedwardisland", "class": "mfp-hide", "live":true}'>Business taxes</li> <!-- Prince Edward Island -->
-		<li data-wb-fieldflow='{"action": "removeClass", "source": "#sudbury", "class": "mfp-hide", "live":true}'>Benefits</li> <!-- Winnepeg -->
-		<li data-wb-fieldflow='{"action": "removeClass", "source": "#sudburyothercorrespondence", "class": "mfp-hide", "live":true}'>Other</li> <!-- Winnipeg (other correspondence) -->
+		<li data-wb-fieldflow='{"action": "removeClass", "source": "#sudbury", "class": "mfp-hide", "live":true}'>Benefits</li> <!-- Sudbury -->
+		<li data-wb-fieldflow='{"action": "removeClass", "source": "#sudburyothercorrespondence", "class": "mfp-hide", "live":true}'>Other</li> <!-- Sudbury (other correspondence) -->
 	</ul>	
 </div>
 
 </form>
 
 </div>
+
+<div class="clearfix"></div>
 
 <!------------------------------------------>
 <!-- End scenario-b ------------------------>
@@ -259,21 +263,24 @@
 
 <!-- PEI tax centre -->
 <section id="princeedwardisland" class="results mfp-hide">
+<div class="col-md-8">
 <div class="panel panel-default">
 <header class="panel-heading">
-<p class="panel-title"><strong>Send your documents or correspondence to:</p>
-</div>
+<p class="panel-title"><strong>Send your documents or correspondence to:</strong></p>
+</header>
 <div class="panel-body">
-<p>Winnipeg tax centre<br>
-Post Office Box 14001, Station Main<br>
-Winnipeg MB &nbsp;R3C 3M3</p>
+<p class="mrgn-lft-lg mrgn-bttm-0">Prince Edward Island tax centre<br>
+275 Pope Road<br>
+Summerside PE &nbsp;C1N 6A2</p>
 </div>
-<footer class="panel-footer">Fax: 204-984-5164</footer>
+<footer class="panel-footer">Fax: 902-432-6287</footer>
+</div>
 </div>
 </section>
 
 <!-- Jonquière tax centre -->
 <section id="jonquiere" class="results mfp-hide">
+<div class="col-md-8">	
 <div class="panel panel-default">
 <header class="panel-heading">
 <p class="panel-title"><strong>Send your documents or correspondence to:</strong></p>
@@ -284,41 +291,47 @@ Post Office Box 14001, Station Main<br>
 Winnipeg MB &nbsp;R3C 3M3</p>
 </div>
 <footer class="panel-footer">Fax: 204-984-5164</footer>
+</div>
 </div>
 </section>
 
 <!-- Sudbury tax centre -->
 <section id="sudbury" class="results mfp-hide">
+<div class="col-md-8">	
 <div class="panel panel-default">
 <header class="panel-heading">
 <p class="panel-title"><strong>Send your documents or correspondence to:</strong></p>
 </header>
 <div class="panel-body">
-<p class="mrgn-lft-lg mrgn-bttm-0">Winnipeg tax centre<br>
-Post Office Box 14001, Station Main<br>
-Winnipeg MB &nbsp;R3C 3M3</p>
+<p class="mrgn-lft-lg mrgn-bttm-0">Sudbury tax centre<br>
+1050 Notre Dame Avenue<br>
+Sudbury ON  &nbsp;P3A 5C2</p>
 </div>
-<footer class="panel-footer">Fax: 204-984-5164</footer>
+<footer class="panel-footer">Fax: 705-671-3994 and 1-855-276-1529</footer>
+</div>
 </div>
 </section>
 
 <!-- Sudbury tax centre (address for "other correspondence") -->
 <section id="sudburyothercorrespondence" class="results mfp-hide">
+<div class="col-md-8">
 <div class="panel panel-default">
 <header class="panel-heading">
 <p class="panel-title"><strong>Send your documents or correspondence to:</strong></p>
 </header>
 <div class="panel-body">
-<p class="mrgn-lft-lg mrgn-bttm-0">Winnipeg tax centre<br>
-Post Office Box 14001, Station Main<br>
-Winnipeg MB &nbsp;R3C 3M3</p>
+<p class="mrgn-lft-lg mrgn-bttm-0">Sudbury tax centre<br>
+Post Office Box 20000, Station A<br>
+Sudbury ON  &nbsp;P3A 5C1</p>
 </div>
-<footer class="panel-footer">Fax: 204-984-5164</footer>
+<footer class="panel-footer">Fax: 705-671-3994 and 1-855-276-1529</footer>
+</div>
 </div>
 </section>
 
 <!-- Winnipeg tax centre -->
-<section id="winnipeg" class="results mfp-hide col-md-8">
+<section id="winnipeg" class="results mfp-hide">
+<div class="col-md-8">	
 <div class="panel panel-default">
 <header class="panel-heading">
 <p class="panel-title"><strong>Send your documents or correspondence to:</strong></p>
@@ -330,22 +343,29 @@ Winnipeg MB &nbsp;R3C 3M3</p>
 </div>
 <footer class="panel-footer">Fax: 204-984-5164</footer>
 </div>
+</div>
+<div class="clearfix"></div>
+
 </section>
 
 <!-- Winnipeg tax centre (address for "other correspondence") -->
 <section id="winnipegothercorrespondence" class="results mfp-hide">
+<div class="col-md-8">
 <div class="panel panel-default">
 <header class="panel-heading">
 <p class="panel-title"><strong>Send your documents or correspondence to:</strong></p>
 </header>
 <div class="panel-body">
 <p class="mrgn-lft-lg mrgn-bttm-0">Winnipeg tax centre<br>
-Post Office Box 14001, Station Main<br>
-Winnipeg MB &nbsp;R3C 3M3</p>
+Post Office Box 14000, Station Main<br>
+Winnipeg MB &nbsp;R3C 3M2</p>
 </div>
 <footer class="panel-footer">Fax: 204-984-5164</footer>
 </div>
+</div>
 </section>
+
+<div class="clearfix"></div>
 
 <!-- Newfoundland and Labrador -->
 <section id="newfoundlandandlabrador" class="results mfp-hide">
