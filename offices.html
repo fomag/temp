@@ -156,7 +156,7 @@
 			"height": 200,
 			"width": 450,
 			"close": true,
-			"content": "<p><strong>_City - Office</strong></p><p>_Address</p>"},
+			"content": "<p><strong>_City</strong></p><p>_Address</p>"},
 		"visible": true 
 	} ]					    
  }'>
@@ -182,7 +182,7 @@
 
 <br>
 
-<details>
+<details><!--
 <summary>Office locations listed geographically from west to east</summary>	
 <table id="cities" aria-label="Office location" class="table">
 	<thead>
@@ -224,7 +224,49 @@
 		</tr>	
 	</tbody>
 </table>
-</details>
+-->
+<table id="cities" aria-label="Office locations" class="table">
+	<thead>
+		<tr>
+			<th>City</th>
+			<th>Office</th>
+			<th>Address</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr data-geometry="POINT (-123.358011 48.4266505)" data-type="wkt">
+			<td>Victoria</td>
+			<td>Vancouver Island and North <abbr title="Tax Services Office">TSO</abbr></td>
+			<td>1415 Vancouver Street<br>Victoria BC &nbsp;V8V 3W4</td>
+		</tr>
+		<tr data-geometry="POINT (-123.0958343 49.2714824)" data-type="wkt">
+			<td>Vancouver</td>
+			<td>Vancouver <abbr title="Tax Services Offices">TSO</abbr></td>
+			<td>468 Terminal Ave<br>Vancouver BC &nbsp;V6A 0C1</td>
+		</tr>	
+		<tr data-geometry="POINT (-122.846197 49.179788)" data-type="wkt">
+			<td>Surrey</td>
+			<td>Fraser Valley <abbr title="Tax Services Offices">TSO</abbr></td>
+			<td>9737 King George Boulevard<br>Surrey BC &nbsp;V3T 5W6</td>
+		</tr>				
+		<tr data-geometry="POINT (-122.748619 53.918259)" data-type="wkt">
+			<td>Prince George</td>
+			<td>Vancouver Island and North <abbr title="Tax Services Offices">TSO</abbr></td>
+			<td>280 Victoria Street<br>Prince George BC &nbsp;V2L 4X3</td>
+		</tr>
+		<tr data-geometry="POINT (-119.595866 49.498695)" data-type="wkt">
+			<td>Penticton</td>
+			<td>Southern Interior B.C. <abbr title="Tax Services Offices">TSO</abbr></td>
+			<td>277 Winnipeg Street<br>Penticton BC &nbsp;V2A 1N6</td>
+		</tr>
+		<tr data-geometry="POINT (-119.5647234 49.8871759)" data-type="wkt">
+			<td>Kelowna</td>
+			<td>Southern Interior B.C. <abbr title="Tax Services Offices">TSO</abbr></td>
+			<td>200 - 471 Queensway Avenue<br>Kelowna BC &nbsp;V1Y 6S5</td>
+		</tr>	
+	</tbody>
+	</table>
+	</details>
 	
 <div class="pagedetails">
 <div class="row">
