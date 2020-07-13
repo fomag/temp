@@ -144,36 +144,72 @@
 			<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"select", "reset": { "action": "addClass", "source":".results,#osm-map", "class": "mfp-hide"}, "noreqlabel": true}'>
 			<p><span class="h3">Which province or territory do you live in?</span></p>
 				<ul>
-					<li>Alberta
-						<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "mfp-hide"}, "noreqlabel": true, "noForm": true}'>
-						<p><span class="h3">Select the city closest to you.</span></p>
-							<ul>		
-      							<li data-wb-fieldflow='{"action": "append", "source": "#scenario-a", "renderas":"radio", "noreqlabel": true}'>Calgary</a></li>
-								<li>Edmonton</li>
-								<li>Lethbridge</li>
-								<li>Red Deer</li>
-							</ul>
-						</div>		
-					</li>			
-					<li>British Columbia</li>
-					<li data-wb-fieldflow='{"action": "append", "source": "#scenario-b", "renderas":"radio", "noreqlabel": true}'>Manitoba</li><!---- Pointing to a scenario just as a demo ---->
-					<li>New Brunswick</li>
-					<li>Newfoundland and Labrador</li>
-					<li>Nova Scotia</li>
+					<li data-wb-fieldflow='{"action": "append", "source": "#scenario-a", "renderas":"radio", "noreqlabel": true}'>Alberta</li>			
+					<li data-wb-fieldflow='{"action": "append", "source": "#scenario-b", "renderas":"radio", "noreqlabel": true}'>British Columbia</li>
+					<li data-wb-fieldflow='{"action": "append", "source": "#scenario-a", "renderas":"radio", "noreqlabel": true}'>Manitoba</li>
+					<li data-wb-fieldflow='{"action": "append", "source": "#scenario-c", "renderas":"radio", "noreqlabel": true}'>New Brunswick</li>
+					<li data-wb-fieldflow='{"action": "append", "source": "#scenario-c", "renderas":"radio", "noreqlabel": true}'>Newfoundland and Labrador</li>
+					<li data-wb-fieldflow='{"action": "append", "source": "#scenario-a", "renderas":"radio", "noreqlabel": true}'>Northwest Territories</li>
+					<li data-wb-fieldflow='{"action": "append", "source": "#scenario-c", "renderas":"radio", "noreqlabel": true}'>Nova Scotia</li>
+					<li data-wb-fieldflow='{"action": "append", "source": "#scenario-c", "renderas":"radio", "noreqlabel": true}'>Nunavut</li>
 					<li>Ontario
 						<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "mfp-hide"}, "noreqlabel": true, "noForm": true}'>
 						<p><span class="h3">Select the city closest to you.</span></p>
 							<ul>		
-      							<li data-wb-fieldflow='{"action": "append", "source": "#scenario-b", "renderas":"radio", "noreqlabel": true}'>Ottawa</a></li>
-								<li>Toronto</li>
-								<li>Windsor</li>
+      							<li data-wb-fieldflow='{"action": "append", "source": "#scenario-d", "renderas":"radio", "noreqlabel": true}'>Barrie</li>
+								<li data-wb-fieldflow='{"action": "append", "source": "#scenario-c", "renderas":"radio", "noreqlabel": true}'>Belleville</li>
+								<li data-wb-fieldflow='{"action": "append", "source": "#scenario-b", "renderas":"radio", "noreqlabel": true}'>Hamilton</li>
+								<li data-wb-fieldflow='{"action": "append", "source": "#scenario-c", "renderas":"radio", "noreqlabel": true}'>Kingston</li>
+								<li data-wb-fieldflow='{"action": "append", "source": "#scenario-b", "renderas":"radio", "noreqlabel": true}'>Kitchener/Waterloo</li>
+								<li data-wb-fieldflow='{"action": "append", "source": "#scenario-a", "renderas":"radio", "noreqlabel": true}'>London</li>
+								<li data-wb-fieldflow='{"action": "append", "source": "#scenario-d", "renderas":"radio", "noreqlabel": true}'>Mississauga</li>
+								<li data-wb-fieldflow='{"action": "append", "source": "#scenario-c", "renderas":"radio", "noreqlabel": true}'>Ottawa</li>
+								<li data-wb-fieldflow='{"action": "append", "source": "#scenario-c", "renderas":"radio", "noreqlabel": true}'>Peterborough</li>
+								<li data-wb-fieldflow='{"action": "append", "source": "#scenario-c", "renderas":"radio", "noreqlabel": true}'>St. Catharines</li>
+								<li>Sudbury
+									<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "mfp-hide"}, "noreqlabel": true, "noForm": true}'>
+									<p><span class="h3">Do you live in the Sudbury - Nickle Belt area?</span></p>
+										<ul>
+											<li data-wb-fieldflow='{"action": "append", "source": "#scenario-d", "renderas":"radio", "noreqlabel": true}'>Yes</li>
+											<li data-wb-fieldflow='{"action": "append", "source": "#scenario-c", "renderas":"radio", "noreqlabel": true}'>No</li>
+											<li data-wb-fieldflow='{"action": "append", "source": "#scenario-c", "renderas":"radio", "noreqlabel": true}'>I'm not sure</li>
+										</ul>
+									</div>		
+								</li>
+								<li data-wb-fieldflow='{"action": "append", "source": "#scenario-a", "renderas":"radio", "noreqlabel": true}'>Thunder Bay</li>
+								<li data-wb-fieldflow='{"action": "append", "source": "#scenario-d", "renderas":"radio", "noreqlabel": true}'>Toronto</li>
+								<li data-wb-fieldflow='{"action": "append", "source": "#scenario-a", "renderas":"radio", "noreqlabel": true}'>Windsor</li>
 							</ul>
 						</div>		
 					</li>
-					<li>Prince Edward Island</li>
-					<li>Quebec</li>
-					<li>Saskatchewan</li>
-					<li>Yukon</li>
+					<li data-wb-fieldflow='{"action": "append", "source": "#scenario-c", "renderas":"radio", "noreqlabel": true}'>Prince Edward Island</li>
+					<li>Quebec
+						<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "mfp-hide"}, "noreqlabel": true, "noForm": true}'>
+						<p><span class="h3">Select the city closest to you.</span></p>
+							<ul>		
+      							<li data-wb-fieldflow='{"action": "append", "source": "#scenario-e", "renderas":"radio", "noreqlabel": true}'>Brossard</li>
+								<li data-wb-fieldflow='{"action": "append", "source": "#scenario-e", "renderas":"radio", "noreqlabel": true}'>Chicoutimi</li>
+								<li data-wb-fieldflow='{"action": "append", "source": "#scenario-c", "renderas":"radio", "noreqlabel": true}'>Gatineau</li>
+								<li data-wb-fieldflow='{"action": "append", "source": "#scenario-e", "renderas":"radio", "noreqlabel": true}'>Laval</li>
+								<li data-wb-fieldflow='{"action": "append", "source": "#scenario-c", "renderas":"radio", "noreqlabel": true}'>Montréal</li>
+								<li data-wb-fieldflow='{"action": "append", "source": "#scenario-e", "renderas":"radio", "noreqlabel": true}'>Québec</li>
+								<li data-wb-fieldflow='{"action": "append", "source": "#scenario-e", "renderas":"radio", "noreqlabel": true}'>Rimouski</li>
+								<li data-wb-fieldflow='{"action": "append", "source": "#scenario-e", "renderas":"radio", "noreqlabel": true}'>Rouyn-Noranda</li>
+								<li data-wb-fieldflow='{"action": "append", "source": "#scenario-c", "renderas":"radio", "noreqlabel": true}'>Sherbrooke</li>
+								<li data-wb-fieldflow='{"action": "append", "source": "#scenario-e", "renderas":"radio", "noreqlabel": true}'>Trois-Rivières</li>
+							</ul>
+						</div>		
+					</li>
+					<li>Saskatchewan
+						<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "mfp-hide"}, "noreqlabel": true, "noForm": true}'>
+						<p><span class="h3">Select the city closest to you.</span></p>
+							<ul>
+								<li data-wb-fieldflow='{"action": "append", "source": "#scenario-b", "renderas":"radio", "noreqlabel": true}'>Regina</li>
+								<li data-wb-fieldflow='{"action": "append", "source": "#scenario-a", "renderas":"radio", "noreqlabel": true}'>Saskatoon</li>
+							</ul>
+						</div>			
+					</li>
+					<li data-wb-fieldflow='{"action": "append", "source": "#scenario-b", "renderas":"radio", "noreqlabel": true}'>Yukon</li>
 				</ul>
 			</div>	
 		</li>
@@ -251,6 +287,36 @@
 
 <p><span class="h3">What type of documents or correspondence do you want to send?</span></p>
 	<ul>
+		<li data-wb-fieldflow='{"action": "removeClass", "source": "#winnipeg", "class": "mfp-hide", "live":true}'>Personal income tax (T1)</li> <!--Winnipeg -->
+		<li data-wb-fieldflow='{"action": "removeClass", "source": "#princeedwardisland", "class": "mfp-hide", "live":true}'>Corporation income tax (T2)</li> <!-- Prince Edward Island -->
+		<li data-wb-fieldflow='{"action": "removeClass", "source": "#princeedwardisland", "class": "mfp-hide", "live":true}'>Business taxes</li> <!-- Prince Edward Island -->
+		<li data-wb-fieldflow='{"action": "removeClass", "source": "#winnipeg", "class": "mfp-hide", "live":true}'>Benefits</li> <!-- Winnipeg -->
+		<li data-wb-fieldflow='{"action": "removeClass", "source": "#winnipegothercorrespondence", "class": "mfp-hide", "live":true}'>Other</li> <!-- Winnipeg (other correspondence) -->
+	</ul>	
+</div>
+
+</form>
+
+</div>
+
+<div class="clearfix"></div>
+
+<!------------------------------------------>
+<!-- End scenario-b ------------------------>
+<!------------------------------------------>
+
+<!------------------------------------------>
+<!-- Start scenario-c ---------------------->
+<!------------------------------------------>
+
+<div class="wb-frmvld hidden">
+
+<form method="get">
+
+<div id="scenario-c" class="wb-fieldflow" data-wb-fieldflow='{"reset": { "action": "addClass", "source":".results", "class": "mfp-hide"}, "live":true, "noForm": true}'>
+
+<p><span class="h3">What type of documents or correspondence do you want to send?</span></p>
+	<ul>
 		<li data-wb-fieldflow='{"action": "removeClass", "source": "#sudbury", "class": "mfp-hide", "live":true}'>Personal income tax (T1)</li> <!--Sudbury -->
 		<li data-wb-fieldflow='{"action": "removeClass", "source": "#princeedwardisland", "class": "mfp-hide", "live":true}'>Corporation income tax (T2)</li> <!-- Prince Edward Island -->
 		<li data-wb-fieldflow='{"action": "removeClass", "source": "#princeedwardisland", "class": "mfp-hide", "live":true}'>Business taxes</li> <!-- Prince Edward Island -->
@@ -266,7 +332,67 @@
 <div class="clearfix"></div>
 
 <!------------------------------------------>
-<!-- End scenario-b ------------------------>
+<!-- End scenario-c ------------------------>
+<!------------------------------------------>
+
+<!------------------------------------------>
+<!-- Start scenario-d ---------------------->
+<!------------------------------------------>
+
+<div class="wb-frmvld hidden">
+
+<form method="get">
+
+<div id="scenario-d" class="wb-fieldflow" data-wb-fieldflow='{"reset": { "action": "addClass", "source":".results", "class": "mfp-hide"}, "live":true, "noForm": true}'>
+
+<p><span class="h3">What type of documents or correspondence do you want to send?</span></p>
+	<ul>
+		<li data-wb-fieldflow='{"action": "removeClass", "source": "#sudbury", "class": "mfp-hide", "live":true}'>Personal income tax (T1)</li> <!--Sudbury -->
+		<li data-wb-fieldflow='{"action": "removeClass", "source": "#sudbury", "class": "mfp-hide", "live":true}'>Corporation income tax (T2)</li> <!-- Sudbury -->
+		<li data-wb-fieldflow='{"action": "removeClass", "source": "#sudbury", "class": "mfp-hide", "live":true}'>Business taxes</li> <!-- Sudbury -->
+		<li data-wb-fieldflow='{"action": "removeClass", "source": "#sudbury", "class": "mfp-hide", "live":true}'>Benefits</li> <!-- Sudbury -->
+		<li data-wb-fieldflow='{"action": "removeClass", "source": "#sudbury", "class": "mfp-hide", "live":true}'>Other</li> <!-- Sudbury -->
+	</ul>	
+</div>
+
+</form>
+
+</div>
+
+<div class="clearfix"></div>
+
+<!------------------------------------------>
+<!-- End scenario-d ------------------------>
+<!------------------------------------------>
+
+<!------------------------------------------>
+<!-- Start scenario-e ---------------------->
+<!------------------------------------------>
+
+<div class="wb-frmvld hidden">
+
+<form method="get">
+
+<div id="scenario-e" class="wb-fieldflow" data-wb-fieldflow='{"reset": { "action": "addClass", "source":".results", "class": "mfp-hide"}, "live":true, "noForm": true}'>
+
+<p><span class="h3">What type of documents or correspondence do you want to send?</span></p>
+	<ul>
+		<li data-wb-fieldflow='{"action": "removeClass", "source": "#jonquiere", "class": "mfp-hide", "live":true}'>Personal income tax (T1)</li> <!--Jonquiere -->
+		<li data-wb-fieldflow='{"action": "removeClass", "source": "#princeedwardisland", "class": "mfp-hide", "live":true}'>Corporation income tax (T2)</li> <!-- Prince Edward Island -->
+		<li data-wb-fieldflow='{"action": "removeClass", "source": "#princeedwardisland", "class": "mfp-hide", "live":true}'>Business taxes</li> <!-- Prince Edward Island -->
+		<li data-wb-fieldflow='{"action": "removeClass", "source": "#jonquiere", "class": "mfp-hide", "live":true}'>Benefits</li> <!-- Jonquiere -->
+		<li data-wb-fieldflow='{"action": "removeClass", "source": "#jonquiere", "class": "mfp-hide", "live":true}'>Other</li> <!-- Jonquiere -->
+	</ul>	
+</div>
+
+</form>
+
+</div>
+
+<div class="clearfix"></div>
+
+<!------------------------------------------>
+<!-- End scenario-e ------------------------>
 <!------------------------------------------>
 
 <!-------------------------------------------------------------------------------------------->
@@ -298,11 +424,11 @@ Summerside PE &nbsp;C1N 6A2</p>
 <p class="panel-title"><strong>Send your documents or correspondence to:</strong></p>
 </header>
 <div class="panel-body">
-<p class="mrgn-lft-lg mrgn-bttm-0">Winnipeg tax centre<br>
-Post Office Box 14001, Station Main<br>
-Winnipeg MB &nbsp;R3C 3M3</p>
+<p class="mrgn-lft-lg mrgn-bttm-0">Jonquière tax centre<br>
+2251 René-Lévesque Boulevard
+Jonquière QC &nbsp;G7S 5J2</p>
 </div>
-<footer class="panel-footer">Fax: 204-984-5164<span class="pull-right"><a href="https://www.canada.ca/en/revenue-agency/services/e-services/submit-documents-online.html">Submit online instead</a></span></footer>
+<footer class="panel-footer">Fax: 418-548-0846<span class="pull-right"><a href="https://www.canada.ca/en/revenue-agency/services/e-services/submit-documents-online.html">Submit online instead</a></span></footer>
 </div>
 </div>
 </section>
