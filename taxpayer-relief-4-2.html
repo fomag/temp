@@ -135,7 +135,7 @@
 		<li>Yes
 			<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results,.results2,#situations", "class": "mfp-hide"}, "noForm": true, "noreqlabel": true}'>
 			<!-- Question 2 -->	
-		    <p><span class="h3">Which tax year(s) are you filing the request for?</span></p>
+		    <p><span class="h3">Does your request pertain to tax year(s) filed? </span></p>
 				<ul>
       				<li data-wb-fieldflow='{"action": "append", "source": "#situations", "renderas":"radio", "noreqlabel": true}'>Within 10 years?</li><!-- appended part is below -->
       				<li>Greater than 10 years?
@@ -173,12 +173,12 @@
 	<ul>
 		<li data-wb-fieldflow='{"action": "removeClass", "source": "#q4-a", "class": "mfp-hide", "live":true}'>I want to file a request to cancel administrative charges on a dishonored payment</li>
 		<li data-wb-fieldflow='{"action": "removeClass", "source": "#q4-b", "class": "mfp-hide", "live":true}'>I want to file a request to cancel a demand-to-file penalty or a penalty for false statements or omissions charged to my GST/HST account</li>
-		<li data-wb-fieldflow='{"action": "removeClass", "source": "#q4-c", "reset": { "action": "addClass", "source":".results", "class": "mfp-hide"},  "class": "mfp-hide", "live":true}'>I want to file a request to cancel taxes instead of penalties and interest</li>
+		<li data-wb-fieldflow='{"action": "removeClass", "source": "#q4-c", "reset": { "action": "addClass", "source":".results", "class": "mfp-hide"},  "class": "mfp-hide", "live":true}'>I want to file a request to cancel taxes</li>
 		<li>I want to delay payment of my taxes
 			<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "mfp-hide"}, "noForm": true, "noreqlabel": true}'>
 				<div class="wb-fieldflow-header">
-				<p class="wb-fieldflow-label"><span class="h3">You may qualify for a payment arrangement. Are you experiencing financial hardship?</span></p>
-				<p>(See <a href="/en/revenue-agency/services/about-canada-revenue-agency-cra/when-you-money-collections-cra/you-cannot-pay-full.html" target="_blank">If you cannot pay in full now</a> if you cannot pay your balance right away.)</p>
+				<p class="wb-fieldflow-label"><span class="h3">Are/were you experiencing an inability to pay or financial hardship for the tax years in question?</span></p>
+				<p>You may qualify for a <a href="/en/revenue-agency/services/about-canada-revenue-agency-cra/when-you-money-collections-cra/you-cannot-pay-full.html" target="_blank">payment arrangement</a> if you cannot pay your balance right away.
 				</div>
 				<ul>
 					<li data-wb-fieldflow='{"action": "removeClass", "source": "#q5-d", "class": "mfp-hide", "live":true}'>Yes</li><!-- Default Case 4 -->
@@ -218,12 +218,12 @@
 				</ul>
 			</div>
 		</li>
-		<li data-wb-fieldflow='{"action": "removeClass", "source": "#q4-j", "class": "mfp-hide", "live":true}'>I want to dispute an assessment I disagree with</li>
+		<li data-wb-fieldflow='{"action": "removeClass", "source": "#q4-j", "class": "mfp-hide", "live":true}'>I want to file an objection with the CRA about my tax return</li>
 		<li>I want to file a request relating to incorrect accounting, missing payments, or other issues relating to accounting
 			<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "mfp-hide"}, "noForm": true, "noreqlabel": true}'>
-			<p><span class="h3">Does your request relate to an amount the CRA has refunded to you?</span></p>
+			<p><span class="h3">Does your penalty/interest relief request relate to an amount the CRA has refunded to you?</span></p>
 				<ul>
-					<li data-wb-fieldflow='{"action": "removeClass", "source": "#q5-a", "class": "mfp-hide", "live":true}'>Yes</li><!-- Default Case 1 -->
+					<li data-wb-fieldflow='{"action": "removeClass", "source": "#q4-k-yes", "class": "mfp-hide", "live":true}'>Yes</li><!-- Default Case 1 -->
 					<li data-wb-fieldflow='{"action": "removeClass", "source": "#q4-k-no", "class": "mfp-hide", "live":true}'>No</li>
 				</ul>
 			</div>	
@@ -231,7 +231,7 @@
 		<li data-wb-fieldflow='{"action": "removeClass", "source": "#q4-l", "class": "mfp-hide", "live":true}'>I want to ask for a relief for a penalty because my return was filed on time</li>
 		<li>My request doesn't pertain to the situations above
 			<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "mfp-hide"}, "noForm": true, "noreqlabel": true}'>
-			<p><span class="h3">Read the circumstances below and choose the one that applies to you</span></p>
+			<p><span class="h3">Choose the circumstance that applies to you</span></p>
 				<ul>
 					<li data-wb-fieldflow='{"action": "removeClass", "source": "#q5-a", "class": "mfp-hide", "live":true}'>Canada Revenue Agency error or delay</li>
 					<li data-wb-fieldflow='{"action": "removeClass", "source": "#q5-b", "class": "mfp-hide", "live":true}'>Natural or human-made disaster</li>
@@ -258,15 +258,15 @@
 </section>
 
 <section id="q4-a" class="results well mfp-hide">
-<p>See <a href="/en/revenue-agency/services/forms-publications/publications/ic07-1r1/taxpayer-relief-provisions-1r1.html">Administrative charge on dishonoured payments</a> or call <a href="#">CRA general enquiries</a> for more information about cancelling these charges.</p>
+<p>See <a href="/en/revenue-agency/services/forms-publications/publications/ic07-1r1/taxpayer-relief-provisions-1r1.html">Administrative charge on dishonoured payments</a> or call 1-800-959-8281 (for individuals) or 1-800-959-8281 (for businesses) to get more information about cancelling these charges.</p>
 </section>
 
 <section id="q4-b" class="results well mfp-hide">
-<p>We cannot consider a request to cancel a demand-to-file penalty or a penalty for false statements or omissions charged to a GST/HST account. See <a href="/en/revenue-agency/services/about-canada-revenue-agency-cra/complaints-disputes/file-objection-cppei-appeal-minister.html">Notice of Objection (Excise Tax Act)</a> to find out about filing a formal objection.</p>
+<p>We cannot consider a request to cancel a demand-to-file penalty or a penalty for false statements or omissions charged to a GST/HST account under the taxpayer relief provisions. See <a href="https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/16-3.html">Notice of Objection (Excise Tax Act)</a> to find out about filing a formal objection to these penalties.</p>
 </section>
 
 <section id="q4-c" class="results well mfp-hide">
-<p>Under the taxpayer relief provisions, only penalty and interest charges can be reviewed. Call <a href="#">CRA general enquiries</a> for more information about your taxes.</p>
+<p>Under the taxpayer relief provisions, only penalty and interest charges can be reviewed. Contact the CRA for more information about your taxes.</p>
 </section>
 
 <section id="q4-d-yes" class="results well mfp-hide">
@@ -282,19 +282,23 @@
 </section>
 
 <section id="q4-d-no" class="results well mfp-hide">
-Reset?
+<p>If there were no circumstances beyond your control, your situation doesn't warrant relief.</p>
 </section>
 
 <section id="q4-e-yes" class="results well mfp-hide">
-<p>You can ask us for relief. See <a href="/en/revenue-agency/services/about-canada-revenue-agency-cra/complaints-disputes/submitting-your-request-1.html">Submitting your request</a> for details on where to send your request.</p>
+<p>You can ask us for relief. For more information, see <a href="/en/revenue-agency/services/about-canada-revenue-agency-cra/complaints-disputes/late-amended-revoked-elections.html">late, amended or revoked elections</a>.</p>
 </section>
 
 <section id="q4-e-no" class="results well mfp-hide">
-<p>If you want to review other circumstances that might apply to you, then go back.</p>
+<p>If you want to review other circumstances that might apply to you, then go back and review the other circumstances.</p>
 </section>
 
 <section id="q4-e-not-sure" class="results well mfp-hide">
-<p>For assistance in determining if we can review your request, contact us at 1-800-959-8281 if you are an individual or 1-800-959-5525 if you are calling on behalf of a business.</p>
+<p>For assistance in determining if we can review your request, contact us at:</p>
+<ul>
+	<li>1-800-959-8281 - individuals or their authorized representatives</li>
+	<li>1-800-959-5525 - businesses or their authorized representatives/li>
+</ul>	
 </section>
 
 <section id="q4-f-1" class="results well mfp-hide">
@@ -304,29 +308,37 @@ Reset?
 	<li>within <strong>three years</strong> of the date of the original notice of assessment to request a reassessment</li>
 </ul>
 
-<p>If the income tax return(s) were not previously filed, individuals and graduated rate estates can request a refund by filing them. Send the income tax returns and supporting documentation to the tax office where you file your returns.</p>
+<p>If your income tax return(s) were not previously filed, individuals and graduated rate estates may request a refund by filing them. Send the income tax returns and <a href="/en/revenue-agency/services/about-canada-revenue-agency-cra/complaints-disputes/cancel-waive-penalties-interest/information-you-must-include-your-request.html">supporting documentation</a> to the tax office where you file your returns.</p>
 <ul>
-	<li>Individuals: Go to <a href="http://www.cra.gc.ca/tso">www.cra.gc.ca/tso</a> for Canada Revenue Agency (CRA) tax centre addresses</li>
-	<li>Graduated rate estates: Go to <a href="/en/revenue-agency/services/tax/trust-administrators/t3-return/where-file-a-t3-return.html">Where to file a T3 return</a> for the correct address</li>
+	<li>Individuals: visit <a href="/en/revenue-agency/corporate/contact-information/tax-services-offices-tax-centres.html">Tax services offices and tax centres</a> for addresses</li>
+	<li>Graduated rate estates: visit <a href="/en/revenue-agency/services/tax/trust-administrators/t3-return/where-file-a-t3-return.html">Where to file a T3 return</a> for addresses</li>
 </ul>	
 
-<p>If the income tax return was previously filed:</p>
+<p>If your income tax return(s) was/were previously filed:</p>
 <ul>
 	<li>For individual accounts, go to <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/change-your-return.html">How to change your return</a> for instructions on submitting your adjustment request.</li>
-	<li>For graduated rate estates, send us a completed Form <a href="/en/revenue-agency/services/forms-publications/forms/t3-adj.html">T3-ADJ, T3 Adjustment Request</a>, or letter providing the details of the change. Indicate the trust’s account number, the tax year you want to change, and attach all supporting documents. For details about where to send your letter or completed form, see <a href="/en/revenue-agency/services/forms-publications/forms/t3-adj.html">Form T3-ADJ, T3 Adjustment Request</a>.</li>
+	<li>For graduated rate estates, send us a completed <a href="/en/revenue-agency/services/forms-publications/forms/t3-adj.html">Form T3-ADJ, T3 Adjustment Request</a>, or letter providing the details of the change. Indicate the trust’s account number, the tax year you want to change, and attach all supporting documents. For details about where to send your letter or completed form, see <a href="/en/revenue-agency/services/forms-publications/forms/t3-adj.html">Form T3-ADJ, T3 Adjustment Request</a>.</li>
 </ul>
 </section>
 
 <section id="q4-f-2" class="results well mfp-hide">
 <p>The normal period for a corporation:</p>
 <ul>
-	<li>to request a reassessment is within <strong>three years</strong> of the date we sent the original notice of assessment for the tax year, if the corporation was a Canadian-controlled private corporation at the end of the year or within <strong>four years</strong> if it was not a Canadian-controlled private corporation at the end of the year</li>
-	<li>to claim a tax refund is within <strong>three years</strong> of the end of the tax year</li>
+	<li>to file a return and claim a tax refund is within three years of the end of the tax year.</li>
 </ul>
 
-<p>Go to <a href="/en/revenue-agency/services/tax/businesses/topics/corporations/after-you-file-your-corporation-income-tax-return/reassessments-adjustments-your-t2-return/requesting-a-reassessment-your-t2-return.html">Requesting a reassessment of your T2 retur</a> for details on how to submit a reassessment request beyond the normal period. 
+<p>The normal period for a corporation to request a reassessment:<p>
+<ul>
+	<li>is within three years of the date we sent the original notice of assessment for the tax year, if the corporation was a Canadian-controlled private corporation (CCPC) at the end of the year</li>
+	<li>is within four years if it was not a CCPC at the end of the year.</li>
+</ul>
 
-<p>Go to <a href="/en/revenue-agency/services/tax/businesses/topics/corporations/after-you-file-your-corporation-income-tax-return/appropriation-t2-statute-barred-credits.html">Re-appropriation of T2 statute-barred credits</a> for details on how to claim a tax refund beyond the normal period.
+<p><strong>Note:</strong> this normal reassessment period may be extended a further 3 years in certain situations: see Extended reassessment period
+</ul>
+
+<p>See <a href="/en/revenue-agency/services/tax/businesses/topics/corporations/after-you-file-your-corporation-income-tax-return/reassessments-adjustments-your-t2-return/requesting-a-reassessment-your-t2-return.html">Requesting a reassessment of your T2 return</a> for details on how to submit a reassessment request beyond the normal period. 
+
+<p>See <a href="/en/revenue-agency/services/tax/businesses/topics/corporations/after-you-file-your-corporation-income-tax-return/appropriation-t2-statute-barred-credits.html">Re-appropriation of T2 statute-barred credits</a> for details on how to claim a tax refund beyond the normal period.
 </section>
 
 <section id="q4-g" class="results well mfp-hide">
@@ -338,7 +350,7 @@ Reset?
 </section>
 
 <section id="q4-i-yes" class="results well mfp-hide">
-<p>Once you've received your notice of assessment, you can ask for relief. If you still need to file a return or an adjustment to a return, submit your relief request along with the return or adjustment request. Go to <a href="/en/revenue-agency/services/about-canada-revenue-agency-cra/complaints-disputes/submitting-your-request-1.html">Submitting your request</a> for instructions on preparing your relief request.</p>
+<p>Once you've received your notice of assessment, you can ask for relief of penalties and/or interest. If you still need to file a return or an adjustment to a return, submit your relief request along with the return or adjustment request. See <a href="/en/revenue-agency/services/about-canada-revenue-agency-cra/complaints-disputes/submitting-your-request-1.html">Submitting your request</a> for instructions on preparing your relief request.</p>
 </section>
 
 <section id="q4-i-no" class="results well mfp-hide">
@@ -349,12 +361,20 @@ Reset?
 <p>See <a href="/en/revenue-agency/services/about-canada-revenue-agency-cra/complaints-disputes/file-objection-cppei-appeal-minister.html">File an objection</a> for information on how and when to dispute an assessment.</p>
 </section>
 
+<section id="q4-k-yes" class="results well mfp-hide">
+<ul>
+	<li>You can ask us for relief. See <a href="/en/revenue-agency/services/about-canada-revenue-agency-cra/complaints-disputes/submitting-your-request-1.html">Submitting your request</a> page for more information.</li>
+	<li>Explain in writing the details and timelines of the delay or error caused by the CRA.</li>
+	<li>If you want to review other situations that might apply to you, then go back.</li>
+</ul>
+</section>
+
 <section id="q4-k-no" class="results well mfp-hide">
-<p>You can ask us to apply your amount to a different year or period. <a href="/en/revenue-agency/corporate/contact-information/tax-services-offices-tax-centres.html">See Tax services offices and tax centres</a> to determine which tax centre to send your request to</p>
+<p>You can ask us to apply the amount to a different year or period. See the <a href="/en/revenue-agency/corporate/contact-information/tax-services-offices-tax-centres.html">tax services offices and tax centres</a> list to determine where to send your request.</p>
 </section>
 
 <section id="q4-l" class="results well mfp-hide">
-<p>If your return was filed on time, request a reassessment by writing in to the tax centre that serves your area. See <a href="/en/revenue-agency/corporate/contact-information/tax-services-offices-tax-centres.html">Tax services offices and tax centres</a> to determine which tax centre to send your request to. Include any proof you may have with your request such as tracking information for your mail or parcel.</p>
+<p>If your return was filed on time, request a reassessment by writing in to the tax centre that serves your area. See the <a href="/en/revenue-agency/corporate/contact-information/tax-services-offices-tax-centres.html">tax services offices and tax centres</a> list to determine where to send your request. Include any proof you may have with your request, such as tracking information for your mail or parcel.</p>
 </section>
 
 <section id="q5-a" class="results well mfp-hide">
@@ -362,8 +382,10 @@ Reset?
 <p>You have indicated there was a CRA delay or error that prevented you from filing your return or paying your taxes on time.</p>
 <p>You can ask us for relief. Go to the <a href="/en/revenue-agency/services/about-canada-revenue-agency-cra/complaints-disputes/submitting-your-request-1.html">Submitting your request</a> page for more information.</p>
 <p>Supporting documentation regarding Canada Revenue Agency error or delay may include but is not limited to the following:</p>
-<p>Explain in writing the details and timelines of the delay or error caused by the CRA.</p>
-<p>If you want to review other situations that might apply to you, then go back.</p>
+<ul>
+	<li>Explain in writing the details and timelines of the delay or error caused by the CRA.</li>
+	<li>If you want to review other situations that might apply to you, then go back.</li>
+</ul>
 </section>
 
 <section id="q5-b" class="results well mfp-hide">
@@ -390,17 +412,15 @@ Reset?
 <!-- Also q4-d-yes -->
 <section id="q5-d" class="results well mfp-hide">
 <!--h3 class="mrgn-tp-sm">Default Case 4</h3-->
-<p>You have indicated there was a Financial hardship/inability to pay that prevented you from filing your return or
-paying your taxes on time.</p>
-<p>You can ask for relief. Go to <a href="/en/revenue-agency/services/about-canada-revenue-agency-cra/complaints-disputes/submitting-your-request-1.html">Submitting your request</a> page for more
-information.</p>
-<p>Supporting documentation regarding financial hardship may include but is not limited to the following:</p>
+<p>You have indicated there was financial hardship or an inability to pay.</p>
+<p>You can ask us for relief. See <a href="/en/revenue-agency/services/about-canada-revenue-agency-cra/complaints-disputes/submitting-your-request-1.html">Submitting your request</a> for more information.</p>
+<p>Supporting documentation regarding an inability to pay or financial hardship:</p>
 <ul>
 	<li>Fill out <a href="/en/revenue-agency/services/forms-publications/forms/rc376.html">Form RC376, Taxpayer Relief Request &ndash; Statement of Income and Expenses and Assets and Liabilities for Individuals</a>, to state your financial situation or provide a written statement.</li>
-	<li>Documents to support your financial disclosure may include: current mortgage statements and property assessments or rental agreements, loans and monthly bills, all bank and credit card statements for the most recent three months, and all current investment statements.</li>
+	<li>Provide your current mortgage statements and property assessments or rental agreements, loans and monthly bills, all bank and credit card statements for the most recent three months, and all current investment statements.</li>
 	<li>Business clients should include a copy of their income and expense statement and assets and liabilities statement.</li>
 </ul>
-<p>If you want to review other situations that might apply to you, then go back.</p>
+<p>If you want to review other situations that might apply to you, then go back and review the other situations.</p>
 </section>
 
 <section id="q5-e" class="results well mfp-hide">
