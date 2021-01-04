@@ -129,8 +129,11 @@
 <form method="get">
 
 <div class="wb-fieldflow" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "mfp-hide"}, "noForm": true, "noreqlabel": true}'>
-<!-- Question 1 -->	
-<p><span class="h3">Were there any circumstances beyond your control that prevented you from filing or paying on time?</span></p>
+<!-- Question 1 -->
+<div class="wb-fieldflow-header">
+			<p class="wb-fieldflow-label"><span class="h3">Were there any circumstances beyond your control that prevented you from filing or paying on time?</span></p>
+			<p>See what <a href="https://www.canada.ca/en/revenue-agency/services/about-canada-revenue-agency-cra/complaints-disputes/cancel-waive-penalties-interest/circumstances-that-may-warrant-relief.html" target="_blank">circumstances beyond your control</a> means</p>
+</div>			
 	<ul>
 		<li>Yes
 			<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results,.results2,#situations", "class": "mfp-hide"}, "noForm": true, "noreqlabel": true}'>
@@ -178,7 +181,8 @@
 			<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "mfp-hide"}, "noForm": true, "noreqlabel": true}'>
 				<div class="wb-fieldflow-header">
 				<p class="wb-fieldflow-label"><span class="h3">Are/were you experiencing an inability to pay or financial hardship for the tax years in question?</span></p>
-				<p>You may qualify for a <a href="/en/revenue-agency/services/about-canada-revenue-agency-cra/when-you-money-collections-cra/you-cannot-pay-full.html" target="_blank">payment arrangement</a> if you cannot pay your balance right away.
+				<p>You may qualify for a <a href="/en/revenue-agency/services/about-canada-revenue-agency-cra/when-you-money-collections-cra/you-cannot-pay-full.html" target="_blank">payment arrangement</a> if you cannot pay your balance right away.</p>
+				<p><a href="#inability-lbx" class="wb-lbx">See what inability to pay or financial hardship means&nbsp;<span class="far fa-question-circle"></span></p>
 				</div>
 				<ul>
 					<li data-wb-fieldflow='{"action": "removeClass", "source": "#q5-d", "class": "mfp-hide", "live":true}'>Yes</li><!-- Default Case 4 -->
@@ -434,6 +438,19 @@
 <p>You have indicated there were other circumstances that prevented you from filing your return or paying your taxes on time.</p>
 <p>You can ask for relief. Go to <a href="/en/revenue-agency/services/about-canada-revenue-agency-cra/complaints-disputes/submitting-your-request-1.html">Submitting your request</a> page for more information.</p>
 <p>If you want to review other situations that might apply to you, then go back.</p>
+</section>
+
+<section id="inability-lbx" class="mfp-hide modal-dialog modal-content overlay-def">
+<header class="modal-header">
+<h2 class="modal-title">Inability to pay</h2>
+</header>
+<div class="modal-body">
+<p>The CRA may, in circumstances where there is a confirmed inability to pay amounts owing, consider waiving or cancelling interest in whole or in part to enable taxpayers to pay their account.</p>
+
+<p>Consideration is not generally given to cancelling a penalty based on an inability to pay or financial hardship unless an extraordinary circumstance prevented compliance, or an exceptional situation existed.</p>
+
+<p>For requests to cancel or waive interest or penalties based on an inability to pay or financial hardship, the CRA requires full financial disclosure from taxpayers, including a statement of income, expenses, assets, and liabilities.</p>
+</div>
 </section>
 
 <div class="pagedetails">
