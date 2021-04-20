@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en" dir="ltr"><!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+		<title>UPD Dashboard</title>
+		<meta content="width=device-width,initial-scale=1" name="viewport">
+		<meta name="robots" content="noindex, nofollow">
+		<!-- Meta data -->
+		<!-- Meta data-->
+		<!-- Load closure template scripts -->
+		<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/soyutils.js"></script>
+		<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/wet-en.js"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+		<!-- Write closure template -->
+		<script type="text/javascript">
+			document.write(wet.builder.refTop({
+			}));
+		</script>
+	</head>
+	<body vocab="http://schema.org/" typeof="WebPage">
+		<div id="def-top">
+		</div>
+
+
+<main role="main" property="mainContentOfPage" class="container">
+
+<h1 property="name" id="wb-cont" style="border-bottom: none">UPD Dashboard</h1>
+
+<section class="well brdr-rds-0" style="background-color: #d3d6db">
+
+<div class="row">
+  <div class="col-md-3">
+  	<p><strong><a href="#"><i class="fas fa-home"></i> Return home</a></strong></p>
+  </div>	
+  <div class="col-md-9 text-right">
+  	<form class="form-inline" role="form" method="get" action="#">
+	  	<input type="text" size="65" class="form-control brdr-rds-0" id="btngrp-search2" placeholder="https://www.canada.ca/en/services/taxes.html" />
+
+		<select class="form-control brdr-rds-0">
+		<option>past 7 days</option>
+		<option>past 14 days</option>
+		<option>past month</option>
+		</select>
+
+     	<button class="btn btn-primary btn-small brdr-rds-0" type="submit" style="background-color: #2572b4"> Load data</button>
+
+    </form>	
+  </div>	  
+</div>
+
+
+<div class="clearfix"></div>
+
+<div class="row mrgn-tp-md">
+<div class="col-md-3">
+<h4 class="wb-inv">Filtering Options</h4>
+
+<form class="wb-tables-filter" data-bind-to="dataset-filter1">
+<div class="form-group mrgn-bttm-0">
+<fieldset>
+<details open>	
+<summary>Overview</summary>
+<ul class="list-unstyled">
+<li class="checkbox"><label for="dt_audience1"><input type="checkbox" id="dt_audience1" name="dt_audience" data-column="6" value="" checked> Page title</label></li>
+<li class="checkbox"><label for="dt_audience2"><input type="checkbox" id="dt_audience2" name="dt_audience" data-column="6" value="" checked> URL</label></li>
+<li class="checkbox"><label for="dt_audience3"><input type="checkbox" id="dt_audience3" name="dt_audience" data-column="6" value=""> Tasks associated with page</label></li>
+</ul>
+</details>
+</fieldset>
+</div>
+<div class="form-group mrgn-bttm-0">
+<fieldset>
+<details>
+<summary>Traffic</summary>
+<ul class="list-unstyled">
+<li class="checkbox"><label for="dt_location1"><input type="checkbox" id="dt_location1" name="dt_location" data-column="5" value="" checked> Page views</label></li>
+<li class="checkbox"><label for="dt_location1"><input type="checkbox" id="dt_location1" name="dt_location" data-column="5" value="" checked> Visits</label></li>
+<li class="checkbox"><label for="dt_location1"><input type="checkbox" id="dt_location1" name="dt_location" data-column="5" value="" checked> Unique visitors</label></li>
+</ul>
+</details>
+</fieldset>
+</div>
+<div class="form-group mrgn-bttm-0">
+<fieldset>
+<details>
+<summary>Google Search</summary>
+<ul class="list-unstyled">
+<li class="checkbox"><label for="dt_location1"><input type="checkbox" id="dt_location1" name="dt_location" data-column="5" value="" checked> Clicks</label></li>
+<li class="checkbox"><label for="dt_location1"><input type="checkbox" id="dt_location1" name="dt_location" data-column="5" value=""> Impressions</label></li>
+</ul>
+</details>
+</fieldset>
+</div>
+<div class="form-group mrgn-bttm-0">
+<fieldset>
+<details>
+<summary>Feedback</summary>
+<ul class="list-unstyled">
+<li class="checkbox"><label for="dt_location1"><input type="checkbox" id="dt_location1" name="dt_location" data-column="5" value="" checked> Did you find what you were looking for?</label></li>
+</ul>
+</details>
+</fieldset>
+</div>
+<div class="form-group mrgn-bttm-0">
+<fieldset>
+<details>
+<summary>UX Testing Results</summary>
+<ul class="list-unstyled">
+<li class="checkbox"><label for="dt_location1"><input type="checkbox" id="dt_location1" name="dt_location" data-column="5" value=""> Something</label></li>
+</ul>
+</details>
+</fieldset>
+</div>
+<div class="form-group">
+<fieldset>
+<details>
+<summary>Call Center Data</summary>
+<ul class="list-unstyled">
+<li class="checkbox"><label for="dt_location1"><input type="checkbox" id="dt_location1" name="dt_location" data-column="5" value=""> Something</label></li>
+</ul>
+</details>
+</fieldset>
+</div>
+<div class="form-group">
+<button type="submit" class="btn btn-primary brdr-rds-0" aria-controls="dataset-filter1">Update</button>
+</div>
+<div class="form-group">
+<button type="reset" class="btn btn-link btn-sm p-0">Reset to defaults</button>
+</div>
+</form>
+
+</div>
+
+<div class="col-md-9">
+<div class="row">
+<p><strong>Date range:</strong> Past 7 days - April 2, 2021 to April 8, 2021</p>
+<h3 class="h4 wb-inv">Overview</h3>
+<p class="small"><strong>Page title:</strong> Taxes<br>
+<strong>URL:</strong> https://www.canada.ca/en/services/taxes.html</p>
+</div>
+
+<div class="clearfix"></div>
+
+<div class="row wb-eqht">
+
+<div class="col-md-4" style="padding-left: 0">
+
+<div class="panel panel-default brdr-rds-0">
+<div class="panel-body text-center">
+<h3 class="h4 mrgn-tp-0 eqht-trgt">Page views</h3>
+<p class="h2 mrgn-tp-md text-primary mrgn-bttm-0">350,105</p>
+<p class="small mrgn-bttm-0">Daily average: 50,123</p>
+</div>
+</div>
+
+</div>
+
+<div class="col-md-4 mrgn-rght" style="padding-left: 0">
+	
+<div class="panel panel-default brdr-rds-0">
+<div class="panel-body text-center">
+<h3 class="h4 mrgn-tp-0 eqht-trgt">Visits</h3>
+<p class="h2 mrgn-tp-md text-primary mrgn-bttm-0">313,257</p>
+<p class="small mrgn-bttm-0">Daily average: 40,123</p>
+</div>
+</div>
+
+</div>
+
+<div class="col-md-4" style="padding-left: 0">
+
+<div class="panel panel-default brdr-rds-0">
+<div class="panel-body text-center">
+<h3 class="h4 mrgn-tp-0 eqht-trgt">Unique visitors</h3>
+<p class="h2 mrgn-tp-md text-primary mrgn-bttm-0">325,645</p>
+<p class="small mrgn-bttm-0">Daily average: 37,645</p>
+</div>
+</div>
+
+</div>
+
+<div class="col-md-4" style="padding-left: 0">
+
+<div class="panel panel-default brdr-rds-0">
+<div class="panel-body text-center">
+<h3 class="h4 mrgn-tp-0 eqht-trgt">Clicks</h3>
+<p class="h2 mrgn-tp-md text-primary mrgn-bttm-0">350,105</p>
+<p class="small mrgn-bttm-0">Daily average: 50,123</p>
+</div>
+</div>
+
+</div>
+
+<div class="col-md-8" style="padding-left: 0">
+<div class="panel panel-default brdr-rds-0">
+<div class="panel-body text-center">
+<h3 class="h4 mrgn-tp-0 eqht-trgt">Did you find what you were looking for?</h3>
+<img class="img-responsive" src="chart.jpg" />
+</div>
+</div>
+
+</div>	
+
+</section>
+
+<div id="def-preFooter">
+</div>
+<!-- Write closure template -->
+<script type="text/javascript">
+	var defPreFooter = document.getElementById("def-preFooter");
+	defPreFooter.outerHTML = wet.builder.preFooter({
+		dateModified: "March 9, 2021",
+		showPostContent: true,
+		showFeedback: true,
+		showShare: true
+	});
+</script>
+		</main>
+		<div id="def-footer">
+
+		</div>
+
+	</body>
+</html>
