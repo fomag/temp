@@ -877,23 +877,33 @@ ol.lst-stps.lst-stps-sm>li, ol.sub-lst-stps.lst-stps-sm>li, .lst-stps.lst-stps-s
 
 </div>
 
-<div id="extreme-hardship-criteria" class="mrgn-tp-lg action-checkbox cb-dmm hidden">
-<label for="input1" class="container-checks">
-<input id="input1" class="btnCheck" type="checkbox">
-You can provide complete background information and documents to support the circumstances of your request.
+<div id="extreme-hardship-criteria" class="mrgn-tp-lg action-checkbox2 cb-dmm hidden">
+<label for="input1" class="checkbox">
+<input id="input1" class="action-checkbox2" type="checkbox">
+You can demonstrate that you were unable to pay the amount(s) at the time they arose
 </label>
-<label for="input2" class="container-checks">
-<input id="input2" class="btnCheck" type="checkbox">
-You have already been assessed the amount(s) in question<span class="checkmark"></span>
+<label for="input2" class="checkbox">
+<input id="input2" class="action-checkbox2" type="checkbox">
+You can demonstrate that you’re unable to pay the amount(s) now (either in part or in full) by using existing funds or assets, re-arranging finances, or borrowing funds
 </label>
-<label for="input3" class="container-checks">
-<input id="input3" class="btnCheck" type="checkbox">
-You have already applied for or cannot find other options for debt relief (<a href="../service-feedback-button.html">find other options to reduce your debt</a>)<span class="checkmark"></span>
+<label for="input3" class="checkbox">
+<input id="input3" class="action-checkbox2" type="checkbox">
+You can demonstrate that you’ll be unable to pay the amount(s) in the future (for example, by having limited future earning potential)
 </label>
-<label for="input4" class="container-checks">
-<input id="input4" class="btnCheck" type="checkbox">
-You are unable to pay your debt (either in part or in full) by using existing funds or assets, re-arranging finances, or borrowing funds<span class="checkmark"></span>
+<label for="input4" class="checkbox">
+<input id="input4" class="action-checkbox2" type="checkbox">
+You’ve planned how you’ll manage paying your income taxes on an ongoing basis to avoid debts in the future
 </label>
+
+
+<div class="alert alert-warning provisional" id="extreme-hardship-criteria-no-msg">
+<p>You need all of the above to request a remission review. For more information about the circumstances that may be considered, see <a href="#">When to Request a Remission Review</a>. If you’re not eligible to request a review, there may be other ways we can help you resolve your issue. See <a href="#">finding tool, name TBD</a>.</p>
+</div>
+
+<div class="hidden provisional alert alert-success" id="extreme-hardship-criteria-msg1">
+You can make a request for a remission review.
+</div>
+
 </div>
 
 </section>
@@ -1195,19 +1205,31 @@ if($('.gcnav-menu').length> 0){
 }
 })( jQuery, document, wb );		
 </script>
- <script>
-         $(".action-checkbox").change(function(){
-         if ($('.action-checkbox:checked').length == $('.action-checkbox').length) {
-         $("#action-msg1").removeClass("hidden").addClass("visible");
-         $("#action-no-msg").addClass("hidden").removeClass("visible");
-         }
-         if ($('.action-checkbox:checked').length !== $('.action-checkbox').length) {
-         $("#action-msg1").addClass("hidden").removeClass("visible");
-         $("#action-no-msg").removeClass("hidden").addClass("visible");
-         }
-         })
-         
-      </script>
+<script>
+$(".action-checkbox").change(function(){
+if ($('.action-checkbox:checked').length == $('.action-checkbox').length) {
+	$("#action-msg1").removeClass("hidden").addClass("visible");
+	$("#action-no-msg").addClass("hidden").removeClass("visible");
+	}
+if ($('.action-checkbox:checked').length !== $('.action-checkbox').length) {
+	$("#action-msg1").addClass("hidden").removeClass("visible");
+	$("#action-no-msg").removeClass("hidden").addClass("visible");
+	}
+})       
+</script>
+
+<script>
+$(".action-checkbox2").change(function(){
+if ($('.action-checkbox2:checked').length == $('.action-checkbox2').length) {
+	$("#extreme-hardship-criteria-msg1").removeClass("hidden").addClass("visible");
+	$("#extreme-hardship-criteria-no-msg").addClass("hidden").removeClass("visible");
+	}
+if ($('.action-checkbox2:checked').length !== $('.action-checkbox2').length) {
+	$("#extreme-hardship-criteria-msg1").addClass("hidden").removeClass("visible");
+	$("#extreme-hardship-criteria-no-msg").removeClass("hidden").addClass("visible");
+	}
+})       
+</script>
 
    </body>
 </html>
