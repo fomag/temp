@@ -137,7 +137,7 @@
 <p>Based on what circumstances are you making a request?</p>
 
 <ul>
-	<li data-wb-fieldflow='{ "action" : "removeClass", "source":"#extreme-hardship-criteria", "class": "hidden"}'>Extreme financial hardship</li>
+	<li data-wb-fieldflow='{ "action" : "removeClass", "source":"#extreme-hardship-criteria", "class": "hidden", "live":true }'>Extreme financial hardship</li>
 	<li data-wb-fieldflow='{ "action" : "removeClass", "source":"#financial-setback-criteria", "class": "hidden"}'>Financial setback with an extenuating factor</a></li>
 	<li data-wb-fieldflow='{ "action" : "removeClass", "source":"#mistake-by-cra-criteria", "class": "hidden"}'>Mistakes made by the CRA</li>
 	<li data-wb-fieldflow='{ "action" : "removeClass", "source":"#unintended-results-criteria", "class": "hidden"}'>Unintended results of the legislation</li>
@@ -151,24 +151,25 @@
 </div>
 
 
-<div id="extreme-hardship-criteria" class="mrgn-tp-lg action-checkbox2 cb-dmm">
-<label for="input1" class="checkbox">
-<input id="input1" class="action-checkbox2" type="checkbox">
-You can demonstrate that you were unable to pay the amount(s) at the time they arose
-</label>
-<label for="input2" class="checkbox">
-<input id="input2" class="action-checkbox2" type="checkbox">
-You can demonstrate that you’re unable to pay the amount(s) now (either in part or in full) by using existing funds or assets, re-arranging finances, or borrowing funds
-</label>
-<label for="input3" class="checkbox">
-<input id="input3" class="action-checkbox2" type="checkbox">
-You can demonstrate that you’ll be unable to pay the amount(s) in the future (for example, by having limited future earning potential)
-</label>
-<label for="input4" class="checkbox">
-<input id="input4" class="action-checkbox2" type="checkbox">
-You’ve planned how you’ll manage paying your income taxes on an ongoing basis to avoid debts in the future
-</label>
-
+<div id="extreme-hardship-criteria" class="hidden mrgn-tp-lg">
+<ul class="checkbox-lg checkbox-zebra">
+<li class="checkbox">
+	<input type="checkbox" id="input1" class="action-checkbox2 cb-dmm">
+	<label for="input1">You can demonstrate that you were unable to pay the amount(s) at the time they arose</label>
+</li>	
+<li class="checkbox">
+	<input type="checkbox" id="input1" class="action-checkbox2 cb-dmm">
+	<label for="input2">You can demonstrate that you’re unable to pay the amount(s) now (either in part or in full) by using existing funds or assets, re-arranging finances, or borrowing funds</label>
+</li>	
+<li class="checkbox">
+	<input type="checkbox" id="input1" class="action-checkbox2 cb-dmm">
+	<label for="input3">You can demonstrate that you’ll be unable to pay the amount(s) in the future (for example, by having limited future earning potential)</label>
+</li>	
+<li class="checkbox">
+	<input type="checkbox" id="input1" class="action-checkbox2 cb-dmm">
+	<label for="input4">You’ve planned how you’ll manage paying your income taxes on an ongoing basis to avoid debts in the future</label>
+</li>	
+</ul>
 
 <div class="alert alert-warning provisional" id="extreme-hardship-criteria-no-msg">
 <p>You need all of the above to request a remission review. For more information about the circumstances that may be considered, see <a href="#">When to Request a Remission Review</a>. If you’re not eligible to request a review, there may be other ways we can help you resolve your issue. See <a href="#">finding tool, name TBD</a>.</p>
