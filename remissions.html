@@ -967,10 +967,89 @@ ol.lst-stps.lst-stps-sm>li, ol.sub-lst-stps.lst-stps-sm>li, .lst-stps.lst-stps-s
 
 </div>
 
-<div class="alert alert-success hidden provisional" id="meets-criteria-msg1">
+<div class="alert alert-success hidden provisional ready-to-apply">
 <h3>You meet the criteria</h3>
 <p>You can make a request for a remission review.</p>
+
 </div>
+
+ <section class="hidden ready-to-apply">
+
+                  <h2>What to include in your request</h2>
+                  <p>You or your authorized representative may request a remission review by sending a letter, with attachments.</p>
+                  <p>We require a complete and verifiable account of your circumstances to conduct a remission review. If you don’t provide enough information, we won’t be able to accept your request.</p>
+                  <p>All requests for a remission review must include:</p>
+                  <h4>Identification</h4>
+                  <ul>
+                    <li>Taxpayer name</li>
+                    <li>Account number</li>
+                    <li>Authorized representative (if applicable)</li>
+                    <li>Complete mailing address where we can contact you or your authorized representative about your remission request</li>
+                    <li>Daytime telephone number where we can contact you or your authorized representative about your remission request</li>
+                  </ul>
+                  
+                  <h3>Details of request</h3>
+                  <ul>
+                    <li>Tax year(s) or period(s) the amount requested relates to</li>
+                    <li>Dollar amount(s) of the debt</li>
+                    <li>Type of debt (for example, tax, interest, penalty, or other debt)</li>
+                    <li>Reason(s) you are requesting a remission review (see <a href="eligibility.html#h-2">Situations that may be accepted for review</a>)</li>
+                  </ul>
+
+                  <details>
+                    <summary>Examples of documents or information you may need to provide</summary>
+                    <p>Depending on your request, here are some examples of what you should include:</p>
+                    <ul>
+                      <li>Dates and descriptions of significant events related to your debt.
+                        <ul>
+                          <li>This might include how the debt arose, actions you took to try to resolve it, why you are now asking for a remission review.</li>
+                          <li>We may not accept your request for review if you don’t tell us all your facts and circumstances.</li>
+                        </ul>
+                      </li>
+                      <li>Copies of any communications with or from us about the issue.</li>
+                      <li>If you are requesting remission because you are in extreme financial hardship, include documentation of your family income since the time your debt arose.</li>
+                      <li>If you believe there were extenuating factors in your case, describe how they impacted your ability to meet your tax, filing or payment obligations. Include any supporting documents that apply, for example medical records.</li>
+                      <li>If you believe that we made an error or incorrectly informed you, include evidence of the error, for example, written instructions you received.</li>
+                      <li>If you believe there have been unintended results of tax legislation in your case, explain, with proof, how the application of the legislation led to an inequitable outcome in your case.</li>
+                      <li>Any other factors you believe are relevant to your remission request and any substantiation in support of your position</li>
+                    </ul>
+                  </details>
+
+                  <h2>Where to send your request</h2>
+                  <dl class="dl-horizontal brdr-0">
+                    <dt>Online</dt>
+                    <dd>
+                      <p>Sign into My Account, My Business Account or Represent a client and submit a request through the:</p>
+                      <ul>
+                        <li>Submit documents service
+                          <ul>Select “Send remission request and supporting documents”</ul>
+                        </li>
+                      </ul>
+                      <p class="h3">For personal tax related requests</p>
+                      <div class=""> <a class="btn btn-primary btn-lg" href="/en/revenue-agency/services/e-services/e-services-individuals/account-individuals.html">Sign in to My Account</a> <span class="register mrgn-lft-md"><a href="/en/revenue-agency/services/e-services/e-services-individuals/account-individuals.html" class="mrgn-tp-lg">Register</a></span> </div>
+                      <p><strong>Alternative:</strong> <a href="">Represent a client</a></p>
+                      <p class="h3">For business tax related requests</p>
+                      <div class=""> <a class="btn btn-primary btn-lg" href="">Sign in to My Business Account</a> <span class="register mrgn-lft-md"><a href="" class="mrgn-tp-lg">Register</a></span> </div>
+                      <p><strong>Alternative:</strong> <a href="">Represent a client</a></p>
+                    </dd>
+                    <dt>By mail</dt>
+                    <dd>
+                      <details>
+                        <summary>How to submit a request by mail</summary>
+                        <p>Mail your request for a remission review and supporting documents to:</p>
+                        <p class="well">
+                          Remissions and Delegations Section<br>
+                          Legislative Policy Directorate<br>
+                          Legislative Policy and Regulatory Affairs Branch<br>
+                          7th Floor, Tower A, Place de Ville<br>
+                          320 Queen Street<br>
+                          Ottawa ON K1A 0L5
+                        </p>
+                      </details>
+                    </dd>
+                  </dl>
+                </section>
+              </section>
 
 </div>
 
@@ -1217,11 +1296,11 @@ if ($('.action-checkbox:checked').length !== $('.action-checkbox').length) {
 <script>
 $(".action-checkbox2").change(function(){
 if ($('.action-checkbox2:checked').length == $('.action-checkbox2').length) {
-	$("#meets-criteria-msg1").removeClass("hidden").addClass("visible");
+	$(".ready-to-apply").removeClass("hidden").addClass("visible");
 	$("#extreme-hardship-criteria-no-msg").addClass("hidden").removeClass("visible");
 	}
 if ($('.action-checkbox2:checked').length !== $('.action-checkbox2').length) {
-	$("#meets-criteria-msg1").addClass("hidden").removeClass("visible");
+	$(".ready-to-apply").addClass("hidden").removeClass("visible");
 	$("#extreme-hardship-criteria-no-msg").removeClass("hidden").addClass("visible");
 	}
 })       
@@ -1230,11 +1309,11 @@ if ($('.action-checkbox2:checked').length !== $('.action-checkbox2').length) {
 <script>
 $(".action-checkbox3").change(function(){
 if ($('.action-checkbox3:checked').length == $('.action-checkbox3').length) {
-	$("#meets-criteria-msg1").removeClass("hidden").addClass("visible");
+	$(".ready-to-apply").removeClass("hidden").addClass("visible");
 	$("#financial-setback-criteria-no-msg").addClass("hidden").removeClass("visible");
 	}
 if ($('.action-checkbox3:checked').length !== $('.action-checkbox3').length) {
-	$("#meets-criteria-msg1").addClass("hidden").removeClass("visible");
+	$(".ready-to-apply").addClass("hidden").removeClass("visible");
 	$("#financial-setback-criteria-no-msg").removeClass("hidden").addClass("visible");
 	}
 })       
@@ -1243,11 +1322,11 @@ if ($('.action-checkbox3:checked').length !== $('.action-checkbox3').length) {
 <script>
 $(".action-checkbox4").change(function(){
 if ($('.action-checkbox4:checked').length == $('.action-checkbox4').length) {
-	$("#meets-criteria-msg1").removeClass("hidden").addClass("visible");
+	$(".ready-to-apply").removeClass("hidden").addClass("visible");
 	$("#mistake-by-cra-criteria-no-msg").addClass("hidden").removeClass("visible");
 	}
 if ($('.action-checkbox4:checked').length !== $('.action-checkbox4').length) {
-	$("#meets-criteria-msg1").addClass("hidden").removeClass("visible");
+	$(".ready-to-apply").addClass("hidden").removeClass("visible");
 	$("#mistake-by-cra-criteria-no-msg").removeClass("hidden").addClass("visible");
 	}
 })       
@@ -1256,11 +1335,11 @@ if ($('.action-checkbox4:checked').length !== $('.action-checkbox4').length) {
 <script>
 $(".action-checkbox5").change(function(){
 if ($('.action-checkbox5:checked').length == $('.action-checkbox5').length) {
-	$("#meets-criteria-msg1").removeClass("hidden").addClass("visible");
+	$(".ready-to-apply").removeClass("hidden").addClass("visible");
 	$("#unintended-results-criteria-no-msg").addClass("hidden").removeClass("visible");
 	}
 if ($('.action-checkbox5:checked').length !== $('.action-checkbox5').length) {
-	$("#meets-criteria-msg1").addClass("hidden").removeClass("visible");
+	$(".ready-to-apply").addClass("hidden").removeClass("visible");
 	$("#unintended-results-criteria-no-msg").removeClass("hidden").addClass("visible");
 	}
 })       
@@ -1269,11 +1348,11 @@ if ($('.action-checkbox5:checked').length !== $('.action-checkbox5').length) {
 <script>
 $(".action-checkbox6").change(function(){
 if ($('.action-checkbox6:checked').length == $('.action-checkbox6').length) {
-	$("#meets-criteria-msg1").removeClass("hidden").addClass("visible");
+	$(".ready-to-apply").removeClass("hidden").addClass("visible");
 	$("#other-circumstances-criteria-no-msg").addClass("hidden").removeClass("visible");
 	}
 if ($('.action-checkbox6:checked').length !== $('.action-checkbox6').length) {
-	$("#meets-criteria-msg1").addClass("hidden").removeClass("visible");
+	$(".ready-to-apply").addClass("hidden").removeClass("visible");
 	$("#other-circumstances-criteria-no-msg").removeClass("hidden").addClass("visible");
 	}
 })       
