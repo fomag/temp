@@ -884,10 +884,6 @@ ol.lst-stps.lst-stps-sm>li, ol.sub-lst-stps.lst-stps-sm>li, .lst-stps.lst-stps-s
 <p>You need all of the above to request a remission review. For more information about the circumstances that may be considered, see <a href="#">When to Request a Remission Review</a>. If you’re not eligible to request a review, there may be other ways we can help you resolve your issue. See <a href="#">finding tool, name TBD</a>.</p>
 </div>
 
-<div class="alert alert-success hidden provisional" id="extreme-hardship-criteria-msg1">
-You can make a request for a remission review.
-</div>
-
 </div>
 
 <div id="financial-setback-criteria" class="hidden mrgn-tp-lg">
@@ -908,10 +904,6 @@ You can make a request for a remission review.
 
 <div class="alert alert-warning provisional" id="financial-setback-criteria-no-msg">
 <p>You need all of the above to request a remission review. For more information about the circumstances that may be considered, see <a href="#">When to Request a Remission Review</a>. If you’re not eligible to request a review, there may be other ways we can help you resolve your issue. See <a href="#">finding tool, name TBD</a>.</p>
-</div>
-
-<div class="alert alert-success hidden provisional" id="financial-setback-criteria-msg1">
-You can make a request for a remission review.
 </div>
 
 </div>
@@ -936,10 +928,6 @@ You can make a request for a remission review.
 <p>You need all of the above to request a remission review. For more information about the circumstances that may be considered, see <a href="#">When to Request a Remission Review</a>. If you’re not eligible to request a review, there may be other ways we can help you resolve your issue. See <a href="#">finding tool, name TBD</a>.</p>
 </div>
 
-<div class="alert alert-success hidden provisional" id="mistake-by-cra-criteria-msg1">
-You can make a request for a remission review.
-</div>
-
 </div>
 
 <div id="unintended-results-criteria" class="hidden mrgn-tp-lg">
@@ -957,10 +945,6 @@ You can make a request for a remission review.
 
 <div class="alert alert-warning provisional" id="unintended-results-criteria-no-msg">
 <p>You need all of the above to request a remission review. For more information about the circumstances that may be considered, see <a href="#">When to Request a Remission Review</a>. If you’re not eligible to request a review, there may be other ways we can help you resolve your issue. See <a href="#">finding tool, name TBD</a>.</p>
-</div>
-
-<div class="alert alert-success hidden provisional" id="unintended-results-criteria-msg1">
-You can make a request for a remission review.
 </div>
 
 </div>
@@ -981,10 +965,11 @@ You can make a request for a remission review.
 <p>You need all of the above to request a remission review. For more information about the circumstances that may be considered, see <a href="#">When to Request a Remission Review</a>. If you’re not eligible to request a review, there may be other ways we can help you resolve your issue. See <a href="#">finding tool, name TBD</a>.</p>
 </div>
 
-<div class="alert alert-success hidden provisional" id="other-circumstances-criteria-msg1">
-You can make a request for a remission review.
 </div>
 
+<div class="alert alert-success hidden provisional" id="meets-criteria-msg1">
+<h3>You meet the criteria</h3>
+<p>You can make a request for a remission review.</p>
 </div>
 
 </div>
@@ -1232,11 +1217,11 @@ if ($('.action-checkbox:checked').length !== $('.action-checkbox').length) {
 <script>
 $(".action-checkbox2").change(function(){
 if ($('.action-checkbox2:checked').length == $('.action-checkbox2').length) {
-	$("#extreme-hardship-criteria-msg1").removeClass("hidden").addClass("visible");
+	$("#meets-criteria-msg1").removeClass("hidden").addClass("visible");
 	$("#extreme-hardship-criteria-no-msg").addClass("hidden").removeClass("visible");
 	}
 if ($('.action-checkbox2:checked').length !== $('.action-checkbox2').length) {
-	$("#extreme-hardship-criteria-msg1").addClass("hidden").removeClass("visible");
+	$("#meets-criteria-msg1").addClass("hidden").removeClass("visible");
 	$("#extreme-hardship-criteria-no-msg").removeClass("hidden").addClass("visible");
 	}
 })       
@@ -1245,11 +1230,11 @@ if ($('.action-checkbox2:checked').length !== $('.action-checkbox2').length) {
 <script>
 $(".action-checkbox3").change(function(){
 if ($('.action-checkbox3:checked').length == $('.action-checkbox3').length) {
-	$("#financial-setback-criteria-msg1").removeClass("hidden").addClass("visible");
+	$("#meets-criteria-msg1").removeClass("hidden").addClass("visible");
 	$("#financial-setback-criteria-no-msg").addClass("hidden").removeClass("visible");
 	}
 if ($('.action-checkbox3:checked').length !== $('.action-checkbox3').length) {
-	$("#financial-setback-criteria-msg1").addClass("hidden").removeClass("visible");
+	$("#meets-criteria-msg1").addClass("hidden").removeClass("visible");
 	$("#financial-setback-criteria-no-msg").removeClass("hidden").addClass("visible");
 	}
 })       
@@ -1258,11 +1243,11 @@ if ($('.action-checkbox3:checked').length !== $('.action-checkbox3').length) {
 <script>
 $(".action-checkbox4").change(function(){
 if ($('.action-checkbox4:checked').length == $('.action-checkbox4').length) {
-	$("#mistake-by-cra-criteria-msg1").removeClass("hidden").addClass("visible");
+	$("#meets-criteria-msg1").removeClass("hidden").addClass("visible");
 	$("#mistake-by-cra-criteria-no-msg").addClass("hidden").removeClass("visible");
 	}
 if ($('.action-checkbox4:checked').length !== $('.action-checkbox4').length) {
-	$("#mistake-by-cra-criteria-msg1").addClass("hidden").removeClass("visible");
+	$("#meets-criteria-msg1").addClass("hidden").removeClass("visible");
 	$("#mistake-by-cra-criteria-no-msg").removeClass("hidden").addClass("visible");
 	}
 })       
@@ -1271,11 +1256,11 @@ if ($('.action-checkbox4:checked').length !== $('.action-checkbox4').length) {
 <script>
 $(".action-checkbox5").change(function(){
 if ($('.action-checkbox5:checked').length == $('.action-checkbox5').length) {
-	$("#unintended-results-criteria-msg1").removeClass("hidden").addClass("visible");
+	$("#meets-criteria-msg1").removeClass("hidden").addClass("visible");
 	$("#unintended-results-criteria-no-msg").addClass("hidden").removeClass("visible");
 	}
 if ($('.action-checkbox5:checked').length !== $('.action-checkbox5').length) {
-	$("#unintended-results-criteria-msg1").addClass("hidden").removeClass("visible");
+	$("#meets-criteria-msg1").addClass("hidden").removeClass("visible");
 	$("#unintended-results-criteria-no-msg").removeClass("hidden").addClass("visible");
 	}
 })       
@@ -1284,11 +1269,11 @@ if ($('.action-checkbox5:checked').length !== $('.action-checkbox5').length) {
 <script>
 $(".action-checkbox6").change(function(){
 if ($('.action-checkbox6:checked').length == $('.action-checkbox6').length) {
-	$("#other-circumstances-criteria-msg1").removeClass("hidden").addClass("visible");
+	$("#meets-criteria-msg1").removeClass("hidden").addClass("visible");
 	$("#other-circumstances-criteria-no-msg").addClass("hidden").removeClass("visible");
 	}
 if ($('.action-checkbox6:checked').length !== $('.action-checkbox6').length) {
-	$("#other-circumstances-criteria-msg1").addClass("hidden").removeClass("visible");
+	$("#meets-criteria-msg1").addClass("hidden").removeClass("visible");
 	$("#other-circumstances-criteria-no-msg").removeClass("hidden").addClass("visible");
 	}
 })       
