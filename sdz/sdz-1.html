@@ -122,10 +122,10 @@
         <div class="form-group">
         <label for="an1" class="required">Secure drop zone code</label>
         <div class="form-inline">
-            <input class="form-control" id="an1" name="an1" type="text" data-rule-alphanumeric="true" size="4" maxlength="4" required="required" /> &nbsp;-&nbsp;
-            <input class="form-control" id="an2" name="an2" type="text" data-rule-alphanumeric="true" size="4" maxlength="4" required="required" /> &nbsp;-&nbsp;
-            <input class="form-control" id="an3" name="an3" type="text" data-rule-alphanumeric="true" size="4" maxlength="4" required="required" /> &nbsp;-&nbsp;
-            <input class="form-control" id="an4" name="an4" type="text" data-rule-alphanumeric="true" size="4" maxlength="4" required="required" />
+            <input class="form-control letter" id="an1" type="text" data-rule-alphanumeric="true" size="4" maxlength="4" required="required" /> &nbsp;-&nbsp;
+            <input class="form-control letter" id="an2" type="text" data-rule-alphanumeric="true" size="4" maxlength="4" required="required" /> &nbsp;-&nbsp;
+            <input class="form-control letter" id="an3" type="text" data-rule-alphanumeric="true" size="4" maxlength="4" required="required" /> &nbsp;-&nbsp;
+            <input class="form-control letter" id="an4" type="text" data-rule-alphanumeric="true" size="4" maxlength="4" required="required" />
         </div>
         </div>
         <input type="submit" value="Enter" class="btn btn-primary"> 
@@ -181,7 +181,15 @@
 <script src="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/GCWeb/js/theme.min.js"></script>
 
 <!-- CustomScriptsStart -->
-
+<script>
+$(document).ready(function () 
+{
+    $('.letter').keypress(function ()
+    {
+        $(this).next().focus();
+    });
+});
+</script>
   
 <!-- CustomScriptsEnd -->
 
