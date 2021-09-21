@@ -113,24 +113,27 @@
 <div class="row">
 <main role="main" property="mainContentOfPage" class="col-md-12">
 
-<h1 id="wb-cont" style="margin-bottom: 20px">Secure drop zone</h1>
+<h1 id="wb-cont" style="margin-bottom: 0px">Secure drop zone</h1>
 
 <!-- Content starts -->
+
+<h2 class="h4">Multi-factor authentification</h2>
+
+<p>Enter the one-time passcode sent bt text message to the phone number ending in 5678.</p>
 
 <div class="wb-frmvld">
     <form action="#" method="get" id="sdz1">
         <div class="form-group">
-        <label for="an1" class="required">Secure drop zone code</label>
+        <label for="an1" class="required">One-time passcode</label>
         <div class="form-inline">
-            <input class="form-control letter" id="an1" type="text" data-rule-alphanumeric="true" size="4" maxlength="4" required="required" /> &nbsp;-&nbsp;
-            <input class="form-control letter" id="an2" type="text" data-rule-alphanumeric="true" size="4" maxlength="4" required="required" /> &nbsp;-&nbsp;
-            <input class="form-control letter" id="an3" type="text" data-rule-alphanumeric="true" size="4" maxlength="4" required="required" /> &nbsp;-&nbsp;
-            <input class="form-control letter" id="an4" type="text" data-rule-alphanumeric="true" size="4" maxlength="4" required="required" />
+            <input class="form-control letter" id="an1" type="text" data-rule-alphanumeric="true" size="6" maxlength="6" required="required" />
         </div>
         </div>
-        <input type="submit" value="Enter" class="btn btn-primary"> 
+        <button class="btn btn-info mrgn-rght-sm">Enter</button> <button class="btn btn-default">Exit</button>
 </form>
 </div>
+
+
 
 <!-- Content ends -->
 
@@ -181,15 +184,7 @@
 <script src="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/GCWeb/js/theme.min.js"></script>
 
 <!-- CustomScriptsStart -->
-<script>
-$(document).ready(function () 
-{
-    $('.letter').keypress(function ()
-    {
-        $(this).next().focus();
-    });
-});
-</script>
+
   
 <!-- CustomScriptsEnd -->
 
