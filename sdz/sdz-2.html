@@ -34,6 +34,130 @@
 <link rel="stylesheet" href="https://careers-carrieres.cra-arc.gc.ca/gol-ged/wcis/iss-sdi/pub/css/custom.css" />
 <!-- CustomCSSEnd -->
 
+<style>
+@font-face {
+  font-family: "Glyphicons Halflings";
+  src: url("https://www.canada.ca/etc/designs/canada/wet-boew/fonts/glyphicons-halflings-regular.eot");
+  src: url("https://www.canada.ca/etc/designs/canada/wet-boew/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("https://www.canada.ca/etc/designs/canada/wet-boew/fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("https://www.canada.ca/etc/designs/canada/wet-boew/fonts/glyphicons-halflings-regular.woff") format("woff"), url("https://www.canada.ca/etc/designs/canada/wet-boew/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("https://www.canada.ca/etc/designs/canada/wet-boew/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: "Glyphicons Halflings";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.alert-info > :first-child::before, .alert-success > :first-child::before, .alert-warning > :first-child::before, .alert-danger > :first-child::before {
+  color: inherit;
+  content: none; }
+
+.alert {
+  background-clip: content-box;
+  background-color: inherit;
+  border-left: 6px solid #000;
+  margin-bottom: 23px;
+  margin-left: 10px;
+  padding: 0 0 0 15px; }
+  .alert > p, .alert > ul, .alert > ol {
+    margin-bottom: 0px; }
+  .alert > * {
+    margin-left: 15px; }
+  .alert details {
+    margin-left: .5em;
+    padding-top: 15px; }
+  .alert > :first-child:not(details) {
+    margin-top: auto;
+    padding-top: 15px; }
+  .alert > :last-child {
+    padding-bottom: 25px; }
+  .alert::before {
+    font-family: "Glyphicons Halflings";
+    font-size: 26px;
+    line-height: 2.3em;
+    margin-left: -1.27em;
+    padding: 2px;
+    position: absolute; }
+  .alert > :first-child {
+    margin-left: 15px; }
+
+.alert-info {
+  border-color: #269abc;
+  -o-border-image: linear-gradient(to bottom, #269abc 16px, #269abc 16px, transparent 16px, transparent 48px, #269abc 48px, #269abc 48px) 1 100%;
+     border-image: linear-gradient(to bottom, #269abc 16px, #269abc 16px, transparent 16px, transparent 48px, #269abc 48px, #269abc 48px) 1 100%; }
+  .alert-info::before {
+    color: #269abc;
+    content: ""; }
+
+.alert-success {
+  border-color: #278400;
+  -o-border-image: linear-gradient(to bottom, #278400 16px, #278400 16px, transparent 16px, transparent 48px, #278400 48px, #278400 48px) 1 100%;
+     border-image: linear-gradient(to bottom, #278400 16px, #278400 16px, transparent 16px, transparent 48px, #278400 48px, #278400 48px) 1 100%; }
+  .alert-success::before {
+    color: #278400;
+    content: ""; }
+
+.alert-warning {
+  border-color: #ee7100;
+  -o-border-image: linear-gradient(to bottom, #ee7100 16px, #ee7100 16px, transparent 16px, transparent 48px, #ee7100 48px, #ee7100 48px) 1 100%;
+     border-image: linear-gradient(to bottom, #ee7100 16px, #ee7100 16px, transparent 16px, transparent 48px, #ee7100 48px, #ee7100 48px) 1 100%; }
+  .alert-warning::before {
+    color: #ee7100;
+    content: ""; }
+
+.alert-danger {
+  border-color: #d3080c;
+  -o-border-image: linear-gradient(to bottom, #d3080c 16px, #d3080c 16px, transparent 16px, transparent 48px, #d3080c 48px, #d3080c 48px) 1 100%;
+     border-image: linear-gradient(to bottom, #d3080c 16px, #d3080c 16px, transparent 16px, transparent 48px, #d3080c 48px, #d3080c 48px) 1 100%; }
+  .alert-danger::before {
+    color: #d3080c;
+    content: ""; }
+
+main {
+    font-size: 20px;
+    line-height: 1.65em;
+}
+
+body {
+    font-family: "Noto Sans",sans-serif;
+    font-size: 16px;
+    line-height: 1.4375;
+    color: #333;
+    background-color: #fff;
+}
+
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.4375;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-style: outset;
+    height: auto;
+    min-height: 36px;
+    min-width: 36px;
+    white-space: normal;
+    color: #335075;
+    background-color: #eaebed;
+    border-color: #dcdee1;
+}   
+</style>
+
 </head>
 
 <body vocab="http://schema.org/" typeof="WebPage">
@@ -117,12 +241,12 @@
 
 <!-- Content starts -->
 
-<h2 class="h4">Multi-factor authentification</h2>
+<h2 class="h3">Multi-factor authentification</h2>
 
 <p>We need to confirm your identity. We will send you a one-time passcode to the phone number ending in 5678.</p>
 <p>How do you want us to contact you?</p>
 
-<button class="btn btn-default mrgn-rght-sm">Text me</button> <button class="btn btn-default mrgn-rght-sm">Call me</button> <button class="btn btn-default">Exit</button>
+<button class="btn btn-default btn-lg mrgn-rght-sm">Text me</button> <button class="btn btn-default btn-lg mrgn-rght-sm">Call me</button> <button class="btn btn-default btn-lg">Exit</button>
 
 <!-- Content ends -->
 

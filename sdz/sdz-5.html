@@ -110,6 +110,18 @@
 <span data-trgt="mb-pnl" class="wb-menu hide"></span>
 
 <style>
+main {
+    font-size: 20px;
+    line-height: 1.65em;
+}
+
+body {
+    font-family: "Noto Sans",sans-serif;
+    font-size: 16px;
+    line-height: 1.4375;
+    color: #333;
+    background-color: #fff;
+}
 
 input[type="file"] {
     display: none;
@@ -236,6 +248,67 @@ h1#wb-cont::after {
   border-right: 0px;
 }
 }
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  border: 2px solid #333;
+}
+/* for checks, container */
+.container-checks {
+  display: block;
+  position: relative;
+  padding-left: 55px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: normal;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* hide default checkbox */
+.container-checks input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* mouse-over, grey */
+.container-checks:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.container-checks input:checked ~ .checkmark {
+  background-color: #fff;
+}
+/* create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* show the checkmark when checked */
+.container-checks input:checked ~ .checkmark:after {
+  display: block;
+}
+/* style the checkmark/indicator */
+.container-checks .checkmark:after {
+  left: 14px;
+  top: 5px;
+  width: 10px;
+  height: 22px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
 </style>    
 
 
@@ -252,14 +325,13 @@ h1#wb-cont::after {
 <section class="gcnav-section">
 <h1 property="name" id="wb-cont" style="margin-bottom: 20px">Download and upload files</h1>
 
-
 <!-- Content starts -->
 
 <section class="label label-danger" style="font-size: 12pt; padding-top: 6px">
     <strong>Your secure drop zone will close in 10 days on July 10, 2021 at 11:59 PM EST</strong>
 </section>
 
-<p>Please confirm you have downloaded all available files and uploaded all necessary files before continuing. This secure drop zone will close after you submit your files for your security.</p>
+<p class="mrgn-tp-md">Please confirm you have downloaded all available files and uploaded all necessary files before continuing. This secure drop zone will close after you submit your files for your security.</p>
 
 <table class="table table-simple mrgn-bttm-0">
 <thead>
@@ -280,8 +352,33 @@ h1#wb-cont::after {
 </tbody>
 </table>
 
-<button class="btn btn-primary mrgn-rght-sm">Submit and close drop zone</button> <button class="btn btn-default mrgn-rght-sm">Go back</button>
+<table class="table table-simple mrgn-bttm-0 mrgn-tp-md">
+<thead>
+    <tr>
+        <th>Files downloaded</th>
+    </tr>    
+</thead>
+<tbody>
+    <tr>
+        <td>Notice of Assessment</td>
+    </tr>
+    <tr>
+        <td>Form for Appeals</td>
+    </tr>
+    <tr>
+        <td>Pre-authorized Debit Confirmation</td>
+    </tr>  
+</tbody>
+</table>
 
+<form class="mrgn-tp-md">
+
+<label for="input1" class="container-checks">
+      <input id="input1" class="btnCheck" type="checkbox">
+      <span class="text-danger"><strong>*</strong></span> I verify that I have downloaded available files and uploaded all required files. <span class="text-danger">(required)</span><span class="checkmark"></span> </label>
+
+<button class="btn btn-primary btn-lg mrgn-rght-sm">Submit and close drop zone</button> <button class="btn btn-default btn-lg mrgn-rght-sm">Go back</button>
+</form>
 <!-- Content ends -->
 
 </section>
