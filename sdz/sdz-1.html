@@ -215,7 +215,7 @@ input[type="file"] {
             </div>
         </div>
         
-        <div id="brand-container-cra">
+        <div id="brand-container-cra" style="background: black;">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-8" id="brand-text-cra">
@@ -242,17 +242,17 @@ input[type="file"] {
 <!-- Content starts -->
 
 <div class="wb-frmvld">
-    <form action="#" method="get" id="sdz1">
+    <form action="https://fomag.github.io/temp/sdz/sdz-2.html" method="get" id="sdz1">
         <div class="form-group">
-        <label for="an1" class="required">Secure drop zone code</label>
+        <label for="an1"><span class="text-danger">*</span>Secure drop zone code <span class="text-danger">(required)</span></label>
         <div class="form-inline">
-            <input class="form-control letter" id="an1" type="text" data-rule-alphanumeric="true" size="4" maxlength="4" required="required" /> &nbsp;-&nbsp;
-            <input class="form-control letter" id="an2" type="text" data-rule-alphanumeric="true" size="4" maxlength="4" required="required" /> &nbsp;-&nbsp;
-            <input class="form-control letter" id="an3" type="text" data-rule-alphanumeric="true" size="4" maxlength="4" required="required" /> &nbsp;-&nbsp;
-            <input class="form-control letter" id="an4" type="text" data-rule-alphanumeric="true" size="4" maxlength="4" required="required" />
+            <input class="form-control letter" id="an1" type="text" data-rule-alphanumeric="true" size="4" maxlength="4" /> &nbsp;-&nbsp;
+            <input class="form-control letter" id="an2" type="text" data-rule-alphanumeric="true" size="4" maxlength="4" /> &nbsp;-&nbsp;
+            <input class="form-control letter" id="an3" type="text" data-rule-alphanumeric="true" size="4" maxlength="4" /> &nbsp;-&nbsp;
+            <input class="form-control letter" id="an4" name="an4" type="text" data-rule-alphanumeric="true" size="4" maxlength="4"  onkeyup="myFunction()" />
         </div>
         </div>
-        <input type="submit" value="Enter" class="btn btn-primary"> 
+        <button class="btn btn-info btn-lg mrgn-rght-sm" id="enter">Enter</button>
 </form>
 </div>
 
@@ -314,6 +314,21 @@ $(document).ready(function ()
     });
 });
 </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(event) {
+        document.getElementById('enter').disabled = "true";
+    });
+    function myFunction() {
+        var an4 = document.getElementById('an4').value;
+        console.log(an4);
+        if (an4 === "") {
+            document.getElementById('enter').disabled = true;
+        } else {
+                document.getElementById('enter').disabled = false;
+        }
+    }
+</script>  
   
 <!-- CustomScriptsEnd -->
 
