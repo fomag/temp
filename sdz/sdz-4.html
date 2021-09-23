@@ -115,10 +115,6 @@ input[type="file"] {
     display: none;
 }
 .custom-file-upload {
-    display: inline-block;
-    margin-bottom: 0;
-    font-weight: 400;
-    text-align: center;
     vertical-align: middle;
     -ms-touch-action: manipulation;
     touch-action: manipulation;
@@ -312,7 +308,7 @@ h1#wb-cont::after {
 <label for="file-upload" class="custom-file-upload">
 Add files
 </label>
-<input id="file" type="file" name="file" multiple onchange="javascript:updateList()" />
+<input id="file-upload" type="file" name="file"  />
 </p>
 <p class="text-center mrgn-bttm-md">or drop the files to upload</p>
 </div>    
@@ -382,7 +378,7 @@ Add files
 <!-- CustomScriptsStart -->
 <script>
   updateList = function() {
-  var input = document.getElementById('file');
+  var input = document.getElementById('file-upload');
   var output = document.getElementById('fileList');
 
   output.innerHTML = '<ul>';
