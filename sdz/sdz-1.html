@@ -16,8 +16,8 @@
 <!--[if gte IE 9 | !IE ]><!-->
 <link href="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon" />
 <link rel="stylesheet" href="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/GCWeb/css/theme.min.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
-<script src="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/wet-boew/js/jquery/2.1.4/jquery.min.js"></script>
 <!--<![endif]-->
 <!--[if lt IE 9]>
 <link href="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/GCWeb/assets/favicon.ico" rel="shortcut icon" />
@@ -241,19 +241,31 @@ input[type="file"] {
 
 <!-- Content starts -->
 
+<style>
+#an4:valid {
+    color: green;
+}
+#an4:invalid {
+    color: red;
+}
+</style>
+
 <div class="wb-frmvld">
     <form action="https://fomag.github.io/temp/sdz/sdz-2.html" method="get" id="sdz1">
         <div class="form-group">
-        <label for="an1"><span class="text-danger">*</span>Secure drop zone code <span class="text-danger">(required)</span></label>
+        <label for="an4" class="required"><span class="field-name">Secure drop zone code</span> <strong class="required">(required)</strong></label>
+        <!--div class="form-inline">
+            <input class="form-control letter" id="an1" type="text" size="4" maxlength="4" pattern="ACGH" data-msg="Custom msg" required="required" /> &nbsp;-&nbsp;
+            <input class="form-control letter" id="an2" type="text" size="4" maxlength="4" pattern="1460" data-msg="Custom msg" required="required" /> &nbsp;-&nbsp;
+            <input class="form-control letter" id="an3" type="text" size="4" maxlength="4" pattern="TUJH" data-msg="Custom msg" required="required" /> &nbsp;-&nbsp;
+            <input class="form-control letter" id="an4" name="an4" type="text" size="4" maxlength="4" pattern="2579" data-msg="Custom msg" required="required" onkeyup="myFunction()" />
+        </div-->
         <div class="form-inline">
-            <input class="form-control letter" id="an1" type="text" data-rule-alphanumeric="true" size="4" maxlength="4" /> &nbsp;-&nbsp;
-            <input class="form-control letter" id="an2" type="text" data-rule-alphanumeric="true" size="4" maxlength="4" /> &nbsp;-&nbsp;
-            <input class="form-control letter" id="an3" type="text" data-rule-alphanumeric="true" size="4" maxlength="4" /> &nbsp;-&nbsp;
-            <input class="form-control letter" id="an4" name="an4" type="text" data-rule-alphanumeric="true" size="4" maxlength="4"  onkeyup="myFunction()" />
+            <input class="form-control" id="an4" name="an4" type="text" pattern="[a-zA-Z]{4}[0-9]{4}[a-zA-Z]{4}[0-9]{4}" data-msg="4 letters followed by 4 numbers followed by 4 letters followed by 4 numbers ex: abcd-1234-efgh-5678" maxlength="16" required="required" onKeyDown="CountLeft(this.form.text,16);" onKeyUp="CountLeft(this.form.text,16);" />
         </div>
+        <button type="submit" class="btn btn-info btn-lg mrgn-rght-sm" id="enter" disabled="disabled">Enter</button>
         </div>
-        <button class="btn btn-info btn-lg mrgn-rght-sm" id="enter">Enter</button>
-</form>
+    </form>
 </div>
 
 <!-- Content ends -->
@@ -295,7 +307,7 @@ input[type="file"] {
 
 <!--[if gte IE 9 | !IE ]><!-->
 
-<script src="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/wet-boew/js/wet-boew.min.js"></script>
+<script src="https://wet-boew.github.io/v4.0-ci/wet-boew/js/wet-boew.min.js"></script>
 <!--<![endif]-->
 
 <!--[if lt IE 9]>
@@ -305,29 +317,13 @@ input[type="file"] {
 <script src="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/GCWeb/js/theme.min.js"></script>
 
 <!-- CustomScriptsStart -->
-<script>
-$(document).ready(function () 
-{
-    $('.letter').keypress(function ()
-    {
-        $(this).next().focus();
-    });
-});
-</script>
 
 <script>
-document.addEventListener("DOMContentLoaded", function(event) {
-        document.getElementById('enter').disabled = "true";
-    });
-    function myFunction() {
-        var an4 = document.getElementById('an4').value;
-        console.log(an4);
-        if (an4 === "") {
-            document.getElementById('enter').disabled = true;
-        } else {
-                document.getElementById('enter').disabled = false;
-        }
-    }
+(function() {
+        $('input#an4').keyup(function() {
+            $('#enter').attr('disabled', $(this).val().length < 16? true : false);
+        });
+    })()
 </script>  
   
 <!-- CustomScriptsEnd -->
