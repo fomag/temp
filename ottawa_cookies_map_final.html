@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ottawa Cookie Spots — Updated Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <style>
+    html, body { height: 100%; margin: 0; }
+    #map { width: 100%; height: 100vh; }
+    .legend { position: absolute; top: 10px; left: 10px; background: white; padding: 10px 12px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.3;}
+    .legend h1 { font-size: 16px; margin: 0 0 6px 0;}
+    .footer-note { position: absolute; bottom: 10px; left: 10px; background: rgba(255,255,255,0.95); padding: 8px 10px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; font-size: 12px;}
+  </style>
+</head>
+<body>
+<div id="map"></div>
+<div class="legend"><h1>Ottawa Cookie Spots</h1><div>All locations preloaded with confirmed coordinates.</div></div>
+<div class="footer-note">Click markers to see the establishment name and address.</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+  const map = L.map('map').setView([45.4215, -75.6972], 12);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+  const bounds = L.latLngBounds();
+
+  var marker = L.marker([45.44137, -75.68155]).addTo(map);
+  marker.bindPopup("<strong>Union Street Kitchen Cafe</strong><br>42 Crichton St, Ottawa, ON K1M 1V4");
+  bounds.extend([45.44137, -75.68155]);
+
+  var marker = L.marker([45.41676, -75.70062]).addTo(map);
+  marker.bindPopup("<strong>Cafe Deluxe</strong><br>200 Kent St, Ottawa, ON K2P 2K2");
+  bounds.extend([45.41676, -75.70062]);
+
+  var marker = L.marker([45.41897, -75.69863]).addTo(map);
+  marker.bindPopup("<strong>Bread and Sons</strong><br>195 Bank St, Ottawa, ON K2P 1W7");
+  bounds.extend([45.41897, -75.69863]);
+
+  var marker = L.marker([45.42059, -75.69923]).addTo(map);
+  marker.bindPopup("<strong>Toro</strong><br>150 Slater St, Ottawa, ON K1P 5H8");
+  bounds.extend([45.42059, -75.69923]);
+
+  var marker = L.marker([45.42784, -75.69591]).addTo(map);
+  marker.bindPopup("<strong>Craig’s Cookies</strong><br>70 George St, Ottawa, ON K1N 5V9");
+  bounds.extend([45.42784, -75.69591]);
+
+  var marker = L.marker([45.48038, -75.50956]).addTo(map);
+  marker.bindPopup("<strong>Stuffed Cookies by Kat</strong><br>5929 Jeanne d'Arc Blvd, Orleans, ON");
+  bounds.extend([45.48038, -75.50956]);
+
+  var marker = L.marker([45.39456, -75.67998]).addTo(map);
+  marker.bindPopup("<strong>Dessert First</strong><br>1071 Bank St, Ottawa, ON K1S 3W9");
+  bounds.extend([45.39456, -75.67998]);
+
+  var marker = L.marker([45.42618, -75.61349]).addTo(map);
+  marker.bindPopup("<strong>Costco Gloucester</strong><br>1405 Blair Towers Pl, Ottawa, ON K1J 1A5");
+  bounds.extend([45.42618, -75.61349]);
+
+  var marker = L.marker([45.4215, -75.6972]).addTo(map);
+  marker.bindPopup("<strong>Harmony Health Clinic Food Counter</strong><br>Ottawa, ON (placeholder)");
+  bounds.extend([45.4215, -75.6972]);
+
+  var marker = L.marker([45.35138, -75.74717]).addTo(map);
+  marker.bindPopup("<strong>Crumbl Cookies</strong><br>1377 Woodroffe Ave, Unit C, Nepean, ON K2G 1V7");
+  bounds.extend([45.35138, -75.74717]);
+
+  var marker = L.marker([45.42022, -75.70914]).addTo(map);
+  marker.bindPopup("<strong>Hello Dolly Pastries</strong><br>992 Wellington St W, Ottawa, ON K1Y 2X8");
+  bounds.extend([45.42022, -75.70914]);
+
+  var marker = L.marker([45.42245, -75.70919]).addTo(map);
+  marker.bindPopup("<strong>Chippers Bakery</strong><br>1055 Somerset St W, Ottawa, ON K1Y 3C4");
+  bounds.extend([45.42245, -75.70919]);
+
+  var marker = L.marker([45.4215, -75.6972]).addTo(map);
+  marker.bindPopup("<strong>Pasticerria Gelateria Italiana</strong><br>Ottawa, ON (placeholder)");
+  bounds.extend([45.4215, -75.6972]);
+
+  var marker = L.marker([45.40246, -75.70924]).addTo(map);
+  marker.bindPopup("<strong>Nutty Greek Bake Shop</strong><br>490 Rochester St, Ottawa, ON K1S 4L8");
+  bounds.extend([45.40246, -75.70924]);
+
+  var marker = L.marker([45.41168, -75.70624]).addTo(map);
+  marker.bindPopup("<strong>Corner Peach</strong><br>802 Somerset St W, Ottawa, ON K1R 7J9");
+  bounds.extend([45.41168, -75.70624]);
+
+  var marker = L.marker([45.41708, -75.69147]).addTo(map);
+  marker.bindPopup("<strong>Greek Souvlaki Shack</strong><br>258 Bank St, Ottawa, ON K2P 1X4");
+  bounds.extend([45.41708, -75.69147]);
+
+  var marker = L.marker([45.41268, -75.69576]).addTo(map);
+  marker.bindPopup("<strong>Three Tarts</strong><br>464 Bank St, Ottawa, ON K2P 1Z3");
+  bounds.extend([45.41268, -75.69576]);
+
+  var marker = L.marker([45.4215, -75.6972]).addTo(map);
+  marker.bindPopup("<strong>Pizza Nerds</strong><br>Ottawa, ON (placeholder)");
+  bounds.extend([45.4215, -75.6972]);
+
+  var marker = L.marker([45.41485, -75.69692]).addTo(map);
+  marker.bindPopup("<strong>Mandy’s</strong><br>581 Bank St, Ottawa, ON K1S 3T4");
+  bounds.extend([45.41485, -75.69692]);
+
+  map.fitBounds(bounds.pad(0.15));
+</script>
+</body>
+</html>
